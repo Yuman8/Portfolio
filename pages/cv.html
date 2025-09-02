@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page-CV</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/cv.css">
+    <link rel="stylesheet" href="C:\afpa-cours\Portfolio\styles\cv.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-titre">
+        <h1 class="titre-arc-en-ciel">
+        <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+        </h1>
+
+        <nav aria-label="Navigation principale">
+            <ul class="nav-list">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="parcours-de-vie.html">Qui suis-je ?</a></li>
+                <li><a href="travaux.html">Mes travaux</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section-intro-cv">
+             <h2>MON CV</h2>
+             <p>Sur cette page, vous pourrez retrouver mon CV codé en HTML/CSS. Vous pouvez également le télécharger en version PDF. Via le lien si dessous</p>
+            <ul>
+                <li>
+                    <a class="cv-style" href="../documents/alexandre-anselin-CV (1).pdf" 
+                    download 
+                    title="Télécharger le CV au format PDF" 
+                    aria-label="Télécharger le CV d'Alexandre Anselin">
+                    Télécharger le CV (PDF)
+                    </a>
+                </li>
+            </ul>
+        </section>
+       
+        <section class="cv" aria-labelledby="cv-title">
+            <header class="cv-header">
+                <figure class="photo-profil">
+                    <img src="../images/images-cv/photo_profil_Alexandre_remasterisé-_3_.webp" alt="Photo d'Alexandre Anselin" class="cv-photo" />
+                    <figcaption>Alexandre Anselin</figcaption>
+                </figure>
+                <div class="cv-identite">
+                    <h3 class="cv-poste">Développeur Full-stack</h3>
+                    <p class="cv-description">
+                        Aujourd’hui en formation de développement web à l’Afpa, je suis à la recherche d’un stage,
+                        pour valider et mettre en pratique les compétences acquises durant mon parcours.
+                    </p>
+                    <dl class="cv-infos">
+                        <dt>Âge</dt><dd>29 ans</dd>
+                        <dt>Adresse</dt><dd>Châtellerault</dd>
+                        <dt>Portable</dt><dd>07 88 00 93 04</dd>
+                        <dt>E-mail</dt>
+                        <dd><a href="mailto:alexandreanselinlea@gmail.com">alexandreanselinlea@gmail.com</a></dd>
+                    </dl>
+                </div>
+            </header>
+
+            <section class="cv-corps">
+                <div class="cv-colonne gauche">
+                    <h2>Formations</h2>
+                    <ul>
+                        <li><strong>Formation DWWM – AFPA Châtellerault</strong><br />
+                            <small>avril 2025 – en cours…</small>
+                        </li>
+                        <li><strong>Préquali développement web – École Atypique x Afpa</strong><br />
+                            <small>déc. 2024 – avr. 2025</small>
+                        </li>
+                    </ul>
+
+                    <h2>Savoir-être</h2>
+                    <ul class="liste-savoir-etre">
+                        <li>Esprit d’équipe</li>
+                        <li>Communication</li>
+                        <li>Curiosité / Envie d’apprendre</li>
+                        <li>Respect</li>
+                        <li>Sens des responsabilités</li>
+                        <li>Empathie</li>
+                        <li>Créativité </li>
+                        <li>Politesse</li>    
+                    </ul>
+
+                    <h2>Autres</h2>
+                    <ul>
+                        <li>Permis B</li>
+                        <li>Bon niveau d’anglais</li>
+                    </ul>
+                </div>
+
+                <div class="cv-colonne droite">
+                    <h2>Compétences</h2>
+                    <ul class="liste-competences">
+                        <li><strong>Technologies Front-End</strong><br />HTML5 / CSS3 / JavaScript / React / Wordpress</li>
+                        <li><strong>Technologies Back-End</strong><br />PHP / Framework Synfony / MySQL</li>
+                        <li><strong>Technologies application mobile</strong><br />Dart / Flutter</li>
+                        <li><strong>API REST</strong><br />JAVASCRIPT / PHP / Api-plateform</li>
+                        <li><strong>Déploiement</strong><br />FTP / CI-CD / Github-action / Docker</li>
+                        <li><strong>SEO</strong><br />Google search console / Référencement naturel</li>
+                    </ul>
+
+                    <h2>Mes projets agiles et livraisons</h2>
+                    <ul class="cv-liens">
+                        <li>
+                            <a href="https://ecf1-anselin-alexandre.sidathsoeun.fr" target="_blank" rel="noopener noreferrer" aria-label="Ouvre le site ecf1 dans un nouvel onglet">
+                                Site ECF1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://alexandre-anselin-mini-cgr-fictif.sidathsoeun.fr/" target="_blank" rel="noopener noreferrer" aria-label="Ouvre le site Mini CGR dans un nouvel onglet">
+                                Site Mini CGR
+                            </a>
+                        </li>
+                          <li>
+                            <a href="https://alexandre-anselin-meteo-horoscope.sidathsoeun.fr/" target="_blank" rel="noopener noreferrer" aria-label="Ouvre le site APICODE dans un nouvel onglet">
+                                Site APICODE
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer itemscope itemtype="https://schema.org/Organization">
+        <p>
+            &copy; 2025 — 
+            <strong itemprop="founder">Alexandre ANSELIN</strong> — 
+            <strong itemprop="name">PORTFOLIO</strong> — 
+            Projet réalisé à l’<abbr title="Agence nationale pour la formation professionnelle des adultes">Afpa</abbr> de Châtellerault
+        </p>
+        <nav aria-label="Liens utiles">
+            <a href="pages/mentions-legals.html" itemprop="url" rel="nofollow">Mentions légales &amp; RGPD</a>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/images-global/parapluie.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 100px auto 50px;
+    border-radius: 20px;
+}
+
+/* ==================== STYLES COMMUNS HEADER FOOTER ==================== */
+.header-titre {
+    text-align: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    background-color: rgba(192, 174, 174, 0.599);
+    backdrop-filter: blur(4px);
+}
+
+h1 {
+    font-family: "Monofett", monospace;
+    padding: 1rem;
+    font-style: normal;
+    font-size: 6rem;
+    margin-bottom: 1.2rem;
+}
+
+.titre-arc-en-ciel span:nth-child(1) { color: #FFFFFF; }
+.titre-arc-en-ciel span:nth-child(2) { color: #D20505; }
+.titre-arc-en-ciel span:nth-child(3) { color: #FFFFFF; }
+.titre-arc-en-ciel span:nth-child(4) { color: #DF8587; }
+.titre-arc-en-ciel span:nth-child(5) { color: #F50100; }
+.titre-arc-en-ciel span:nth-child(6) { color: #FFFFFF; }
+.titre-arc-en-ciel span:nth-child(7) { color: #D47686; }
+.titre-arc-en-ciel span:nth-child(8) { color: #F50805; }
+.titre-arc-en-ciel span:nth-child(9) { color: #EDB8BD; }
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    margin-bottom: 1.1rem;
+    text-transform: uppercase;
+    font-family: "Quicksand", sans-serif;
+}
+
+.nav-list li a:hover {
+    color: #ff0000;
+}
+/* ==================== FOOTER ==================== */
+footer {
+    background-color: rgba(192, 174, 174, 0.599);
+    backdrop-filter: blur(4px);
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 2px solid white;
+    margin-top: 2rem;
+}
+
+footer p {
+    color: white;
+    margin: 0 0 1rem 0;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+}
+
+footer nav a {
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: #D20505;
+}
+/* ==================== MAIN - SECTIONS TRAVAUX ==================== */
+
+/* Section intro */
+.section-intro-travaux,.section-article-travaux article{
+    background-color:#172F40;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    border:solid white;
+}
+
+.section-intro-travaux h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d31414;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-intro-travaux p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    line-height: 1.6;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Section articles travaux */
+.section-article-travaux {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Articles individuels */
+.section-article-travaux article {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-article-travaux article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Figure - Container principal de chaque projet */
+.section-article-travaux figure {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    align-items: flex-start;
+}
+
+/* Image du projet */
+.section-article-travaux figure img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.section-article-travaux figure img:hover {
+    transform: scale(1.05);
+}
+
+/* Figcaption - Contenu texte à droite */
+.section-article-travaux figcaption {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Changé de space-between à flex-start */
+    min-height: 200px;
+    text-align: left; /* Alignement à gauche pour le contenu */
+}
+
+/* Titre du projet */
+.section-article-travaux h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #D20505;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Métadonnées du projet */
+.project-meta {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+    font-weight: 600;
+    line-height: 1.8; /* Ajout d'un line-height plus généreux */
+}
+
+.project-meta time,
+.project-meta span {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.3rem 0.6rem; /* Padding légèrement augmenté */
+    border-radius: 12px;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem; /* Ajout d'un margin-bottom pour éviter les chevauchements */
+    display: inline-block; /* Assure un bon comportement lors du retour à la ligne */
+}
+
+/* Description du projet */
+.section-article-travaux figcaption p[itemprop="description"] {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    color: #FFFFFF;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* Bouton "Voir le site" - CENTRÉ AVEC MARGIN-TOP */
+.section-article-travaux figcaption a {
+    display: inline-block;
+    background: linear-gradient(45deg, #D20505, #F50100);
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    align-self: center; /* Centre le bouton horizontalement */
+    margin-top: 1rem; /* Ajout du margin-top demandé */
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-article-travaux figcaption a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+}
+
+.section-article-travaux figcaption a:hover::before {
+    left: 100%;
+}
+
+.section-article-travaux figcaption a:hover {
+    background: linear-gradient(45deg, #F50100, #D20505);
+    border-color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(213, 5, 5, 0.4);
+}
+
+/* Classe utilitaire pour masquer visuellement */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+

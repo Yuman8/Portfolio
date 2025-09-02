@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page travaux du site PORTFOLIO</title>
+  <meta name="author" content="Alexandre ANSELIN" />
+  <meta name="description" content="Page travaux d'Alexandre Anselin, développeur web, sur cette page les réalisations faites durant ma formation à l'AFPA de Châtellerault." />
+  <link rel="stylesheet" href="../styles/reset.css" />
+  <link rel="stylesheet" href="../styles/travaux.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-titre">
+        <h1 class="titre-arc-en-ciel">
+            <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+        </h1>
+
+        <nav aria-label="Navigation principale">
+            <ul class="nav-list">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="cv.html">Mon CV</a></li>
+                <li><a href="parcours-de-vie.html">Qui suis-je ?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-intro-travaux" aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Mes travaux</h2>
+            <p>Sur cette page vous pourrez retrouver mes différents travaux déployés réalisés au cours de ma formation de développeur web</p>
+        </section>
+
+        <section class="section-article-travaux" aria-labelledby="projects-heading">
+            <h2 id="projects-heading" class="sr-only">Projets réalisés</h2>
+            
+            <article itemscope itemtype="https://schema.org/CreativeWork">
+                <figure>
+                    <img src="../images/images-mes-travaux/screen-ecf1.webp" 
+                         alt="Capture d'écran de la page d'accueil du site ECF1 montrant l'interface horoscope"
+                         itemprop="image">
+                    <figcaption>
+                        <h3 itemprop="name">ECF1</h3>
+                        <p class="project-meta">
+                            <time datetime="2024" itemprop="dateCreated">2024</time> • 
+                            <span itemprop="category">Frontend</span> • 
+                            <span itemprop="keywords">JavaScript, API, HTML, CSS, Responsive, Référencement</span>
+                        </p>
+                        <p itemprop="description">L'objectif de ce site était de mettre en lumière les compétences front-end apprises. C'est un site horoscope qui affiche les 12 signes avec au passage de la souris sur l'image, un texte disant votre horoscope. Utilisation de JavaScript, appel API, HTML, CSS !</p>
+                        <a href="https://ecf1-anselin-alexandre.sidathsoeun.fr/" 
+                           itemprop="url" 
+                           rel="external"
+                           aria-label="Visiter le site ECF1 - Horoscope interactif">Voir le site</a>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article itemscope itemtype="https://schema.org/CreativeWork">
+                <figure>
+                    <img src="../images/images-mes-travaux/screen-mini-cgr.webp" 
+                         alt="Capture d'écran de la page d'accueil du site Mini CGR fictif montrant l'interface de réservation"
+                         itemprop="image">
+                    <figcaption>
+                        <h3 itemprop="name">Mini CGR</h3>
+                        <p class="project-meta">
+                            <time datetime="2024" itemprop="dateCreated">2024</time> • 
+                            <span itemprop="category">Frontend</span> • 
+                            <span itemprop="keywords">Local Storage, Session Storage, JavaScript, HTML, CSS, Responsive, Référencement</span>
+                        </p>
+                        <p itemprop="description">L'objectif de ce site était de mettre en lumière les compétences frontend avec l'utilisation du local et session storage, ainsi que l'ajout d'une page admin et d'un espace membre. C'est un site fictif de réservation de places de cinéma. Malheureusement en l'absence de base de données, l'utilisation est limitée !</p>
+                        <a href="https://alexandre-anselin-mini-cgr-fictif.sidathsoeun.fr/" 
+                           itemprop="url" 
+                           rel="external"
+                           aria-label="Visiter le site Mini CGR - Réservation cinéma fictive">Voir le site</a>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article itemscope itemtype="https://schema.org/CreativeWork">
+                <figure>
+                    <img src="../images/images-mes-travaux/screen-meteo-horoscope.webp" 
+                         alt="Capture d'écran de la page d'accueil du site APICODE montrant les données météo et horoscope"
+                         itemprop="image">
+                    <figcaption>
+                        <h3 itemprop="name">APICODE</h3>
+                        <p class="project-meta">
+                            <time datetime="2024" itemprop="dateCreated">2024</time> • 
+                            <span itemprop="category">Frontend</span> • 
+                            <span itemprop="keywords">API REST, Javascript, HTML, CSS, Responsive, Référencement</span>
+                        </p>
+                        <p itemprop="description">L'objectif de ce site était de mettre en lumière l'utilisation d'API REST utilisées pour récupérer des données météo et d'horoscope et qu'elles soient affichées à jour</p>
+                        <a href="https://alexandre-anselin-meteo-horoscope.sidathsoeun.fr/" 
+                           itemprop="url" 
+                           rel="external"
+                           aria-label="Visiter le site APICODE - Météo et horoscope en temps réel">Voir le site</a>
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+
+    <footer itemscope itemtype="https://schema.org/Organization">
+        <p>
+            &copy; 2025 — 
+            <strong itemprop="founder">Alexandre ANSELIN</strong> — 
+            <strong itemprop="name">PORTFOLIO</strong> — 
+            Projet réalisé à l'<abbr title="Agence nationale pour la formation professionnelle des adultes">AFPA</abbr> de Châtellerault
+        </p>
+        <nav aria-label="Liens utiles">
+            <a href="pages/mentions-legals.html" itemprop="url" rel="nofollow">Mentions légales &amp; RGPD</a>
+        </nav>
+    </footer>
+    
+</body>
+</html>

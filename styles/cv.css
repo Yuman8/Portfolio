@@ -1,0 +1,396 @@
+/* ==================== CSS CV ALEXANDRE ANSELIN ==================== */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/images-global/parapluie.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 100px auto 50px;
+    border-radius: 20px;
+}
+
+/* ==================== STYLES COMMUNS HEADER ==================== */
+.header-titre {
+    text-align: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    background-color: rgba(192, 174, 174, 0.599);
+    backdrop-filter: blur(4px);
+}
+
+h1 {
+    font-family: "Monofett", monospace;
+    padding: 1rem;
+    font-style: normal;
+    font-size: 6rem;
+    margin-bottom: 1.2rem;
+}
+
+.titre-arc-en-ciel span:nth-child(1) { color: #FFFFFF; }
+.titre-arc-en-ciel span:nth-child(2) { color: #D20505; }
+.titre-arc-en-ciel span:nth-child(3) { color: #FFFFFF; }
+.titre-arc-en-ciel span:nth-child(4) { color: #DF8587; }
+.titre-arc-en-ciel span:nth-child(5) { color: #F50100; }
+.titre-arc-en-ciel span:nth-child(6) { color: #FFFFFF; }
+.titre-arc-en-ciel span:nth-child(7) { color: #D47686; }
+.titre-arc-en-ciel span:nth-child(8) { color: #F50805; }
+.titre-arc-en-ciel span:nth-child(9) { color: #EDB8BD; }
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    margin-bottom: 1.1rem;
+    text-transform: uppercase;
+    font-family: "Quicksand", sans-serif;
+}
+
+.nav-list li a:hover {
+    color: #ff0000;
+}
+
+/* ==================== SECTION INTRO CV ==================== */
+.section-intro-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #172F40;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: solid white;
+}
+
+.section-intro-cv h2 {
+    color: #cabbbb;
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section-intro-cv p {
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    padding: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    text-align: center;
+    max-width: 800px;
+}
+.cv-style{
+    color: #cabbbb;
+}
+/* ==================== SECTION CV PRINCIPALE ==================== */
+.cv {
+    background-color: #172F40;
+    border-radius: 20px;
+    border: solid white;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+/* ==================== HEADER CV ==================== */
+.cv-header {
+    background: linear-gradient(135deg, #D20505, #F50100);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.cv-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(24 71 91);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.cv-header > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Photo de profil */
+.photo-profil {
+    flex-shrink: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.cv-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.cv-photo:hover {
+    transform: scale(1.05);
+}
+
+.photo-profil figcaption {
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Identité CV */
+.cv-identite {
+    flex: 1;
+    color: white;
+}
+
+.cv-poste {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 1rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cv-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #EDB8BD;
+}
+
+/* Infos personnelles */
+.cv-infos {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+    margin: 0;
+}
+
+.cv-infos dt {
+    font-weight: 600;
+    color: #cabbbb;
+    font-family: "Quicksand", sans-serif;
+}
+
+.cv-infos dd {
+    margin: 0;
+    color: white;
+}
+
+.cv-infos a {
+    color: #EDB8BD;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cv-infos a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ==================== CORPS CV ==================== */
+.cv-corps {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 0;
+    min-height: 500px;
+}
+
+/* Colonne gauche */
+.cv-colonne.gauche {
+    background-color: #1a3447;
+    padding: 2rem 1.5rem;
+    border-right: 2px solid #cabbbb;
+}
+
+/* Colonne droite */
+.cv-colonne.droite {
+    padding: 2rem;
+    background-color: #172F40;
+}
+
+/* Titres des sections */
+.cv-corps h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #cabbbb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #D20505;
+    position: relative;
+}
+
+.cv-corps h2::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #F50100;
+}
+
+.cv-corps h2:not(:first-child) {
+    margin-top: 2rem;
+}
+
+/* Listes générales */
+.cv-corps ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.cv-corps li {
+    color: white;
+    margin-bottom: 0.8rem;
+    padding-left: 1rem;
+    position: relative;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.cv-corps li::before {
+    content: '🔹';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #D20505;
+}
+
+/* Formations */
+.cv-corps .cv-colonne.gauche li strong {
+    color: #cabbbb;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.cv-corps .cv-colonne.gauche li small {
+    color: #EDB8BD;
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+/* Savoir-être */
+.liste-savoir-etre li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Compétences */
+.liste-competences li {
+    margin-bottom: 1rem;
+}
+
+.liste-competences li strong {
+    color: #cabbbb;
+    display: block;
+    margin-bottom: 0.3rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+}
+
+/* Liens des projets */
+.cv-liens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cv-liens li::before {
+    display: none;
+}
+
+.cv-liens a {
+    color: #EDB8BD;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid #D20505;
+    border-radius: 8px;
+    background-color: rgba(210, 5, 5, 0.1);
+    text-align: center;
+    width: 160px; /* Largeur fixe pour tous */
+}
+
+.cv-liens a:hover {
+    background-color: #D20505;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+    background-color: rgba(192, 174, 174, 0.599);
+    backdrop-filter: blur(4px);
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 2px solid white;
+    margin-top: 2rem;
+}
+
+footer p {
+    color: white;
+    margin: 0 0 1rem 0;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+}
+
+footer nav a {
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: #D20505;
+}
+

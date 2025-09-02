@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page d'accueil du site PORTFOLIO</title>
+  <meta name="author" content="Alexandre ANSELIN" />
+  <meta name="description" content="Portfolio d'Alexandre Anselin, développeur web, présentant son parcours, ses réalisations, son CV et ses centres d'intérêt." />
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-titre">
+        <h1 class="titre-arc-en-ciel">
+            <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+        </h1>
+
+        <nav aria-label="Navigation principale">
+            <ul class="nav-list">
+                <li><a href="pages/cv.html">Mon CV</a></li>
+                <li><a href="pages/parcours-de-vie.html">Qui suis-je ?</a></li>
+                <li><a href="pages/travaux.html">Mes travaux</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Développeur Web -->
+        <section aria-labelledby="intro-dev-web" class="section-intro">
+            <div class="content-text">
+                <h2 id="intro-dev-web" class="h2-intro">Développeur Web</h2>
+                <p class="p-intro">
+                    Bienvenue, je m'appelle <strong>Alexandre Anselin</strong>, j'ai 29 ans et voici mon <strong>portfolio</strong>,
+                    où vous pourrez trouver mon CV, mes travaux ainsi que mes centres d'intérêt.
+                    C'est un espace où je partage mes projets réalisés, mes compétences acquises au cours de ma formation et les domaines qui me passionnent.
+                    N'hésitez pas à explorer les différentes sections pour en apprendre davantage sur mon parcours et mes réalisations.
+                </p>
+            </div>
+            <figure>
+                <img src="images/images-accueil/ghibli-alexandre.webp"
+                    alt="Portrait de Alexandre Anselin, développeur web"
+                    width="400" height="400"
+                    loading="lazy"
+                    itemprop="image" />
+                <figcaption>Portrait de <strong>Alexandre Anselin</strong> version ghibli</figcaption>
+            </figure>
+        </section>
+
+        <!-- Section Parcours de vie -->
+        <section aria-labelledby="parcours-vie" class="section-vie">
+            <figure>
+                <img src="images/images-accueil/quisuisjeaccueil.webp" 
+                     alt="Image illustrant mon parcours de vie" 
+                     width="400" height="300" 
+                     loading="lazy">
+                <figcaption>Un chemin marqué par la résilience et la passion du développement web</figcaption>
+            </figure>
+            <div class="content-text">
+                <h2 id="parcours-vie" class="h2-vie">Parcours de vie</h2>
+                <p>
+                    Mon parcours de vie a été façonné par des épreuves qui m'ont permis de développer des valeurs humaines fortes et une grande résilience. 
+                    Ces expériences m'ont poussé à me réinventer et m'ont naturellement conduit vers le développement web, un domaine qui me passionne et me permet de me dépasser chaque jour.
+                </p>
+                <a href="pages/parcours-de-vie.html" class="btn-en-savoir-plus" title="Lire le détail de mon parcours personnel et professionnel">
+                    En savoir plus
+                </a>
+            </div>
+        </section>
+
+        <!-- Section CV -->
+        <section class="card-cv" aria-labelledby="cv-heading">
+            <header>
+                <h2 id="cv-heading">CV <strong>Alexandre Anselin</strong></h2>
+            </header>
+
+            <figure class="cv-figure">
+                <img src="images/images-accueil/screen-cv.webp" 
+                    alt="Miniature du CV PDF d'Alexandre Anselin" 
+                    class="cv-miniature" 
+                    width="400" height="300"
+                    loading="lazy" />
+                <figcaption>Extrait visuel du CV</figcaption>
+            </figure>
+
+            <p>
+                Ce CV détaille mon parcours, mes compétences techniques et mes projets réalisés.
+            </p>
+
+            <nav class="cv-actions" aria-label="Actions autour du CV">
+                <ul>
+                    <li>
+                        <a href="documents/alexandre-anselin-CV (1).pdf" 
+                        download 
+                        class="btn-download" 
+                        title="Télécharger le CV au format PDF" 
+                        aria-label="Télécharger le CV d'Alexandre Anselin">
+                         Télécharger le CV (PDF)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/cv.html" 
+                        class="btn-voir-plus" 
+                        rel="next" 
+                        title="Accéder à la page du CV complet" 
+                        aria-label="Voir le CV complet d'Alexandre Anselin">
+                        Voir le CV complet
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Section Mes travaux -->
+        <section class="section-travaux" aria-labelledby="travaux-heading">
+            <header>
+                <h2 id="travaux-heading">Mes travaux</h2>
+                <p>
+                    Découvrez mes projets web réalisés dans le cadre de ma formation en développement front-end, ainsi que des créations personnelles. 
+                    Chaque projet met en œuvre mes compétences en HTML, CSS, JavaScript et APIs.
+                </p>
+            </header>
+
+            <div class="carrousel-travaux" role="region" aria-label="Exemples de réalisations interactives">
+                <ul class="liste-travaux">
+                    <li>
+                        <article itemscope itemtype="https://schema.org/CreativeWork">
+                            <a href="https://ecf1-anselin-alexandre.sidathsoeun.fr/" 
+                                target="_blank" rel="noopener noreferrer" itemprop="url">
+                                <figure>
+                                    <img src="images/images-mes-travaux/screen-ecf1.webp" 
+                                        alt="Miniature du projet ecf1 - affichage avec temps de chargement horoscope" 
+                                        loading="lazy" width="400" height="300" itemprop="image" />
+                                    <figcaption itemprop="description">ECF1 : horoscope en ligne</figcaption>
+                                </figure>
+                            </a>
+                            <meta itemprop="name" content="Projet ECF1 - affichage avec temps de chargement horoscope" />
+                        </article>
+                    </li>
+
+                    <li>
+                        <article itemscope itemtype="https://schema.org/CreativeWork">
+                            <a href="https://alexandre-anselin-mini-cgr-fictif.sidathsoeun.fr/" 
+                                target="_blank" rel="noopener noreferrer" itemprop="url">
+                                <figure>
+                                    <img src="images/images-mes-travaux/screen-mini-cgr.webp" 
+                                        alt="Miniature du projet Mini CGR - simulateur de réservation de films" 
+                                        loading="lazy" width="400" height="300" itemprop="image" />
+                                    <figcaption itemprop="description">Mini CGR : simulateur de réservation de films fictif</figcaption>
+                                </figure>
+                            </a>
+                            <meta itemprop="name" content="Mini CGR - Simulateur de réservation de films" />
+                        </article>
+                    </li>
+
+                    <li>
+                        <article itemscope itemtype="https://schema.org/CreativeWork">
+                            <a href="https://alexandre-anselin-meteo-horoscope.sidathsoeun.fr/" 
+                                target="_blank" rel="noopener noreferrer" itemprop="url">
+                                <figure>
+                                    <img src="images/images-mes-travaux/screen-meteo-horoscope.webp" 
+                                        alt="Miniature de l'application météo et horoscope avec API" 
+                                        loading="lazy" width="400" height="300" itemprop="image" />
+                                    <figcaption itemprop="description">Application API : météo dynamique et horoscope personnalisé</figcaption>
+                                </figure>
+                            </a>
+                            <meta itemprop="name" content="Application météo et horoscope API" />
+                        </article>
+                    </li>
+
+                    <!-- Duplication pour effet carrousel infini -->
+                    <li>
+                        <article itemscope itemtype="https://schema.org/CreativeWork">
+                            <a href="https://ecf1-anselin-alexandre.sidathsoeun.fr/" 
+                                target="_blank" rel="noopener noreferrer" itemprop="url">
+                                <figure>
+                                    <img src="images/images-mes-travaux/screen-ecf1.webp" 
+                                        alt="Miniature du projet ecf1 - affichage avec temps de chargement horoscope" 
+                                        loading="lazy" width="400" height="300" itemprop="image" />
+                                    <figcaption itemprop="description">ECF1 : horoscope en ligne</figcaption>
+                                </figure>
+                            </a>
+                            <meta itemprop="name" content="Projet ECF1 - affichage avec temps de chargement horoscope" />
+                        </article>
+                    </li>
+
+                    <li>
+                        <article itemscope itemtype="https://schema.org/CreativeWork">
+                            <a href="https://alexandre-anselin-mini-cgr-fictif.sidathsoeun.fr/" 
+                                target="_blank" rel="noopener noreferrer" itemprop="url">
+                                <figure>
+                                    <img src="images/images-mes-travaux/screen-mini-cgr.webp" 
+                                        alt="Miniature du projet Mini CGR - simulateur de réservation de films" 
+                                        loading="lazy" width="400" height="300" itemprop="image" />
+                                    <figcaption itemprop="description">Mini CGR : simulateur de réservation de films fictif</figcaption>
+                                </figure>
+                            </a>
+                            <meta itemprop="name" content="Mini CGR - Simulateur de réservation de films" />
+                        </article>
+                    </li>
+
+                    <li>
+                        <article itemscope itemtype="https://schema.org/CreativeWork">
+                            <a href="https://alexandre-anselin-meteo-horoscope.sidathsoeun.fr/" 
+                                target="_blank" rel="noopener noreferrer" itemprop="url">
+                                <figure>
+                                    <img src="images/images-mes-travaux/screen-meteo-horoscope.webp" 
+                                        alt="Miniature de l'application météo et horoscope avec API" 
+                                        loading="lazy" width="400" height="300" itemprop="image" />
+                                    <figcaption itemprop="description">Application API : météo dynamique et horoscope personnalisé</figcaption>
+                                </figure>
+                            </a>
+                            <meta itemprop="name" content="Application météo et horoscope API" />
+                        </article>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="btn-travaux">
+                <a href="pages/travaux.html" 
+                class="btn-voir-plus" 
+                title="Accéder à l'ensemble de mes réalisations web" 
+                aria-label="Accéder à tous mes projets">
+                Voir mes travaux
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer itemscope itemtype="https://schema.org/Organization">
+        <p>
+          &copy; 2025 — 
+          <strong itemprop="founder">Alexandre ANSELIN</strong> — 
+          <strong itemprop="name">PORTFOLIO</strong> — 
+          Projet réalisé à l'<abbr title="Agence nationale pour la formation professionnelle des adultes">AFPA</abbr> de Châtellerault
+        </p>
+        <nav aria-label="Liens utiles">
+          <a href="pages/mentions-legales.html" itemprop="url" rel="nofollow">Mentions légales &amp; RGPD</a>
+        </nav>
+    </footer>
+</body>
+</html>
