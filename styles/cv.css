@@ -1,4 +1,4 @@
-/* ==================== CSS CV ALEXANDRE ANSELIN ==================== */
+/* ==================== CSS CV ALEXANDRE ANSELIN - VERSION RESPONSIVE ==================== */
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -10,6 +10,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -106,9 +108,11 @@ h1 {
     text-align: center;
     max-width: 800px;
 }
+
 .cv-style{
     color: #cabbbb;
 }
+
 /* ==================== SECTION CV PRINCIPALE ==================== */
 .cv {
     background-color: #172F40;
@@ -394,3 +398,482 @@ footer nav a:hover {
     color: #D20505;
 }
 
+/* ==================== MEDIA QUERIES - RESPONSIVE ==================== */
+
+/* ==================== LAPTOPS / GRANDS ÉCRANS (1200px+) ==================== */
+@media screen and (min-width: 1200px) {
+    main {
+        width: 70%;
+        max-width: 1400px;
+    }
+    
+    h1 {
+        font-size: 7rem;
+    }
+    
+    .cv-header {
+        padding: 3rem;
+    }
+    
+    .cv-photo {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .cv-poste {
+        font-size: 2.5rem;
+    }
+    
+    .cv-colonne.gauche,
+    .cv-colonne.droite {
+        padding: 3rem 2rem;
+    }
+}
+
+/* ==================== ÉCRANS MOYENS / LAPTOPS (992px - 1199px) ==================== */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    main {
+        width: 75%;
+    }
+    
+    h1 {
+        font-size: 5.5rem;
+    }
+    
+    .cv-header {
+        padding: 2.5rem;
+    }
+    
+    .cv-photo {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .cv-poste {
+        font-size: 1.8rem;
+    }
+}
+
+/* ==================== TABLETTES (768px - 991px) ==================== */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    main {
+        width: 85%;
+        margin: 50px auto 30px;
+    }
+    
+    h1 {
+        font-size: 4rem;
+        padding: 0.5rem;
+    }
+    
+    .nav-list {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+    
+    .nav-list li a {
+        font-size: 1.1rem;
+    }
+    
+    .section-intro-cv {
+        padding: 1.5rem;
+    }
+    
+    .section-intro-cv h2 {
+        font-size: 1.6rem;
+    }
+    
+    .section-intro-cv p {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .cv-header {
+        padding: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .cv-photo {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .cv-poste {
+        font-size: 1.6rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .cv-description {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .cv-infos {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+        text-align: center;
+    }
+    
+    .cv-infos dt {
+        font-weight: 700;
+        margin-top: 0.5rem;
+    }
+    
+    .cv-corps {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .cv-colonne.gauche {
+        border-right: none;
+        border-bottom: 2px solid #cabbbb;
+        padding: 1.5rem;
+    }
+    
+    .cv-colonne.droite {
+        padding: 1.5rem;
+    }
+    
+    .cv-liens {
+        justify-content: center;
+    }
+    
+    .cv-liens a {
+        width: 140px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ==================== SMARTPHONES (481px - 767px) ==================== */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+    body {
+        background-attachment: scroll;
+    }
+    
+    main {
+        width: 95%;
+        margin: 20px auto 20px;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        padding: 0.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .header-titre {
+        padding-bottom: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .nav-list {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .nav-list li a {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .section-intro-cv {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .section-intro-cv h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .section-intro-cv p {
+        font-size: 0.95rem;
+        line-height: 1.5rem;
+        padding: 0.5rem 0;
+    }
+    
+    .cv-header {
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .cv-photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 15px;
+    }
+    
+    .photo-profil figcaption {
+        font-size: 1rem;
+        margin-top: 0.3rem;
+    }
+    
+    .cv-poste {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .cv-description {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+    }
+    
+    .cv-infos {
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+        text-align: center;
+    }
+    
+    .cv-infos dt {
+        font-weight: 700;
+        margin-top: 0.5rem;
+        color: #EDB8BD;
+    }
+    
+    .cv-corps {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+    
+    .cv-colonne.gauche {
+        border-right: none;
+        border-bottom: 2px solid #cabbbb;
+        padding: 1rem;
+    }
+    
+    .cv-colonne.droite {
+        padding: 1rem;
+    }
+    
+    .cv-corps h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .cv-corps h2:not(:first-child) {
+        margin-top: 1.5rem;
+    }
+    
+    .cv-corps li {
+        font-size: 0.9rem;
+        margin-bottom: 0.6rem;
+        line-height: 1.4;
+    }
+    
+    .cv-liens {
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    
+    .cv-liens a {
+        width: 120px;
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    footer {
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* ==================== TRÈS PETITS ÉCRANS (≤ 480px) ==================== */
+@media screen and (max-width: 480px) {
+    body {
+        background-attachment: scroll;
+    }
+    
+    main {
+        width: 98%;
+        margin: 10px auto 15px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+        padding: 0.3rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.1;
+    }
+    
+    .header-titre {
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        border-radius: 15px;
+    }
+    
+    .nav-list {
+        gap: 0.8rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-list li a {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .section-intro-cv {
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border-radius: 15px;
+    }
+    
+    .section-intro-cv h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .section-intro-cv p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        padding: 0.3rem 0;
+    }
+    
+    .cv {
+        border-radius: 15px;
+        margin-bottom: 1rem;
+    }
+    
+    .cv-header {
+        padding: 0.8rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+    }
+    
+    .cv-photo {
+        width: 80px;
+        height: 80px;
+        border-radius: 12px;
+        border: 3px solid white;
+    }
+    
+    .photo-profil figcaption {
+        font-size: 0.9rem;
+        margin-top: 0.2rem;
+    }
+    
+    .cv-poste {
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+        letter-spacing: 0.3px;
+        line-height: 1.2;
+    }
+    
+    .cv-description {
+        font-size: 0.85rem;
+        margin-bottom: 0.8rem;
+        line-height: 1.3;
+    }
+    
+    .cv-infos {
+        grid-template-columns: 1fr;
+        gap: 0.1rem;
+        text-align: center;
+        font-size: 0.85rem;
+    }
+    
+    .cv-infos dt {
+        font-weight: 700;
+        margin-top: 0.4rem;
+        color: #EDB8BD;
+        font-size: 0.9rem;
+    }
+    
+    .cv-corps {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+    
+    .cv-colonne.gauche {
+        border-right: none;
+        border-bottom: 2px solid #cabbbb;
+        padding: 0.8rem;
+    }
+    
+    .cv-colonne.droite {
+        padding: 0.8rem;
+    }
+    
+    .cv-corps h2 {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .cv-corps h2::after {
+        width: 30px;
+    }
+    
+    .cv-corps h2:not(:first-child) {
+        margin-top: 1.2rem;
+    }
+    
+    .cv-corps li {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.3;
+        padding-left: 0.8rem;
+    }
+    
+    .cv-corps li::before {
+        font-size: 0.8rem;
+    }
+    
+    .cv-liens {
+        justify-content: center;
+        gap: 0.6rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cv-liens a {
+        width: 140px;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.6rem;
+    }
+    
+    footer {
+        padding: 0.8rem;
+        margin-top: 1rem;
+        border-radius: 0 0 15px 15px;
+    }
+    
+    footer p {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    footer nav a {
+        font-size: 0.85rem;
+    }
+}
+
+/* ==================== AJUSTEMENTS SPÉCIAUX POUR L'ORIENTATION PAYSAGE ==================== */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    main {
+        margin: 20px auto;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .cv-header {
+        padding: 1rem;
+    }
+    
+    .section-intro-cv {
+        padding: 1rem;
+    }
+}

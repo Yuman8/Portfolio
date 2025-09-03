@@ -8,6 +8,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -69,6 +71,7 @@ h1 {
 .nav-list li a:hover {
     color: #ff0000;
 }
+
 /* ==================== FOOTER ==================== */
 footer {
     background-color: rgba(192, 174, 174, 0.599);
@@ -96,16 +99,17 @@ footer nav a {
 footer nav a:hover {
     color: #D20505;
 }
+
 /* ==================== MAIN - SECTIONS TRAVAUX ==================== */
 
 /* Section intro */
-.section-intro-travaux,.section-article-travaux article{
-    background-color:#172F40;
+.section-intro-travaux, .section-article-travaux article {
+    background-color: #172F40;
     padding: 2rem;
     margin-bottom: 2rem;
     border-radius: 20px;
     text-align: center;
-    border:solid white;
+    border: solid white;
 }
 
 .section-intro-travaux h2 {
@@ -172,9 +176,9 @@ footer nav a:hover {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Changé de space-between à flex-start */
+    justify-content: flex-start;
     min-height: 200px;
-    text-align: left; /* Alignement à gauche pour le contenu */
+    text-align: left;
 }
 
 /* Titre du projet */
@@ -196,17 +200,17 @@ footer nav a:hover {
     margin-bottom: 1rem;
     opacity: 0.9;
     font-weight: 600;
-    line-height: 1.8; /* Ajout d'un line-height plus généreux */
+    line-height: 1.8;
 }
 
 .project-meta time,
 .project-meta span {
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 0.3rem 0.6rem; /* Padding légèrement augmenté */
+    padding: 0.3rem 0.6rem;
     border-radius: 12px;
     margin-right: 0.4rem;
-    margin-bottom: 0.4rem; /* Ajout d'un margin-bottom pour éviter les chevauchements */
-    display: inline-block; /* Assure un bon comportement lors du retour à la ligne */
+    margin-bottom: 0.4rem;
+    display: inline-block;
 }
 
 /* Description du projet */
@@ -219,7 +223,7 @@ footer nav a:hover {
     flex-grow: 1;
 }
 
-/* Bouton "Voir le site" - CENTRÉ AVEC MARGIN-TOP */
+/* Bouton "Voir le site" */
 .section-article-travaux figcaption a {
     display: inline-block;
     background: linear-gradient(45deg, #D20505, #F50100);
@@ -232,8 +236,8 @@ footer nav a:hover {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    align-self: center; /* Centre le bouton horizontalement */
-    margin-top: 1rem; /* Ajout du margin-top demandé */
+    align-self: center;
+    margin-top: 1rem;
     border: 2px solid transparent;
     position: relative;
     overflow: hidden;
@@ -274,3 +278,513 @@ footer nav a:hover {
     border: 0;
 }
 
+/* ==================== MEDIA QUERIES RESPONSIVE ==================== */
+
+/* ==================== TRÈS GRANDS ÉCRANS (1920px+) ==================== */
+@media screen and (min-width: 1920px) {
+    main {
+        width: 50%;
+        margin: 120px auto 60px;
+    }
+    
+    h1 {
+        font-size: 7rem;
+    }
+    
+    .nav-list li a {
+        font-size: 1.4rem;
+    }
+    
+    .section-intro-travaux h2 {
+        font-size: 2.5rem;
+    }
+    
+    .section-intro-travaux p {
+        font-size: 1.2rem;
+    }
+    
+    .section-article-travaux h3 {
+        font-size: 2rem;
+    }
+    
+    .section-article-travaux figure img {
+        width: 350px;
+        height: 250px;
+    }
+    
+    .section-article-travaux figcaption {
+        min-height: 250px;
+    }
+}
+
+/* ==================== LAPTOP/DESKTOP (1200px - 1919px) ==================== */
+@media screen and (max-width: 1919px) and (min-width: 1200px) {
+    main {
+        width: 65%;
+        margin: 80px auto 40px;
+    }
+    
+    h1 {
+        font-size: 5.5rem;
+    }
+    
+    .nav-list {
+        gap: 1.8rem;
+    }
+    
+    .section-article-travaux figure img {
+        width: 280px;
+        height: 180px;
+    }
+    
+    .section-article-travaux figcaption {
+        min-height: 180px;
+    }
+}
+
+/* ==================== TABLETTE PAYSAGE (1024px - 1199px) ==================== */
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    body {
+        background-attachment: scroll;
+    }
+    
+    main {
+        width: 75%;
+        margin: 60px auto 30px;
+    }
+    
+    h1 {
+        font-size: 4.5rem;
+        padding: 0.8rem;
+    }
+    
+    .nav-list {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+    
+    .nav-list li a {
+        font-size: 1.1rem;
+    }
+    
+    .section-intro-travaux, .section-article-travaux article {
+        padding: 1.5rem;
+    }
+    
+    .section-intro-travaux h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-intro-travaux p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+    
+    .section-article-travaux figure {
+        gap: 1.5rem;
+    }
+    
+    .section-article-travaux figure img {
+        width: 250px;
+        height: 160px;
+    }
+    
+    .section-article-travaux figcaption {
+        min-height: 160px;
+    }
+    
+    .section-article-travaux h3 {
+        font-size: 1.6rem;
+    }
+    
+    footer {
+        padding: 1.2rem;
+    }
+}
+
+/* ==================== TABLETTE PORTRAIT (768px - 1023px) ==================== */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+    
+    main {
+        width: 85%;
+        margin: 40px auto 20px;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+        padding: 0.6rem;
+    }
+    
+    .nav-list {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .nav-list li a {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .section-intro-travaux, .section-article-travaux article {
+        padding: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .section-intro-travaux h2 {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+    
+    .section-intro-travaux p {
+        font-size: 0.95rem;
+        max-width: 100%;
+    }
+    
+    .section-article-travaux figure {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .section-article-travaux figure img {
+        width: 100%;
+        max-width: 400px;
+        height: 200px;
+    }
+    
+    .section-article-travaux figcaption {
+        text-align: center;
+        min-height: auto;
+    }
+    
+    .section-article-travaux h3 {
+        font-size: 1.4rem;
+    }
+    
+    .project-meta {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+    
+    .section-article-travaux figcaption p[itemprop="description"] {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+    
+    footer {
+        padding: 1rem;
+    }
+    
+    footer nav a {
+        display: inline-block;
+        margin: 0 0.5rem;
+    }
+}
+
+/* ==================== SMARTPHONE GRAND (480px - 767px) ==================== */
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    body {
+        background-attachment: scroll;
+        background-position: center;
+    }
+    
+    main {
+        width: 95%;
+        margin: 20px auto 15px;
+    }
+    
+    .header-titre {
+        padding-bottom: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2.8rem;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    
+    .nav-list li a {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 1rem;
+        display: block;
+    }
+    
+    .section-intro-travaux, .section-article-travaux article {
+        padding: 1rem;
+        margin-bottom: 1.2rem;
+        border-radius: 15px;
+    }
+    
+    .section-intro-travaux h2 {
+        font-size: 1.4rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .section-intro-travaux p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .section-article-travaux figure {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .section-article-travaux figure img {
+        width: 100%;
+        height: 180px;
+        border-radius: 12px;
+    }
+    
+    .section-article-travaux figcaption {
+        text-align: center;
+        min-height: auto;
+    }
+    
+    .section-article-travaux h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .project-meta {
+        font-size: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .project-meta time,
+    .project-meta span {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.75rem;
+        margin: 0.2rem;
+    }
+    
+    .section-article-travaux figcaption p[itemprop="description"] {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+    
+    .section-article-travaux figcaption a {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+        border-radius: 20px;
+    }
+    
+    footer {
+        padding: 0.8rem;
+        margin-top: 1.5rem;
+    }
+    
+    footer p {
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    footer nav a {
+        font-size: 0.9rem;
+        display: inline-block;
+        margin: 0.2rem;
+        padding: 0.3rem;
+    }
+}
+
+/* ==================== SMARTPHONE PETIT (320px - 479px) ==================== */
+@media screen and (max-width: 479px) {
+    body {
+        background-attachment: scroll;
+        background-position: center;
+        font-size: 14px;
+    }
+    
+    main {
+        width: 98%;
+        margin: 15px auto 10px;
+    }
+    
+    .header-titre {
+        padding-bottom: 0.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+        padding: 0.3rem;
+        margin-bottom: 0.8rem;
+        line-height: 1.1;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 0.3rem;
+        align-items: center;
+    }
+    
+    .nav-list li a {
+        font-size: 0.85rem;
+        margin-bottom: 0.3rem;
+        padding: 0.4rem 0.8rem;
+        display: block;
+        text-align: center;
+    }
+    
+    .section-intro-travaux, .section-article-travaux article {
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border-radius: 12px;
+    }
+    
+    .section-intro-travaux h2 {
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        margin-bottom: 0.8rem;
+    }
+    
+    .section-intro-travaux p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    
+    .section-article-travaux {
+        gap: 1rem;
+    }
+    
+    .section-article-travaux figure {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: center;
+    }
+    
+    .section-article-travaux figure img {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        border-width: 2px;
+    }
+    
+    .section-article-travaux figcaption {
+        text-align: center;
+        min-height: auto;
+    }
+    
+    .section-article-travaux h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.6rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .project-meta {
+        font-size: 0.75rem;
+        margin-bottom: 0.6rem;
+        line-height: 1.6;
+    }
+    
+    .project-meta time,
+    .project-meta span {
+        padding: 0.15rem 0.3rem;
+        font-size: 0.7rem;
+        margin: 0.1rem;
+        border-radius: 8px;
+    }
+    
+    .section-article-travaux figcaption p[itemprop="description"] {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-bottom: 0.8rem;
+        text-align: left;
+    }
+    
+    .section-article-travaux figcaption a {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
+        border-radius: 18px;
+        letter-spacing: 0.5px;
+    }
+    
+    footer {
+        padding: 0.6rem;
+        margin-top: 1rem;
+    }
+    
+    footer p {
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    footer nav a {
+        font-size: 0.8rem;
+        display: block;
+        margin: 0.3rem 0;
+        padding: 0.2rem;
+        text-align: center;
+    }
+}
+
+/* ==================== OPTIMISATIONS POUR PERFORMANCES ==================== */
+
+/* Réduire les animations sur les appareils qui préfèrent moins de mouvement */
+@media (prefers-reduced-motion: reduce) {
+    .section-article-travaux article {
+        transition: none;
+    }
+    
+    .section-article-travaux figure img {
+        transition: none;
+    }
+    
+    .section-article-travaux figcaption a {
+        transition: none;
+    }
+    
+    .section-article-travaux figcaption a::before {
+        transition: none;
+    }
+    
+    .nav-list li a {
+        transition: none;
+    }
+    
+    footer nav a {
+        transition: none;
+    }
+}
+
+/* Optimisation pour les écrans tactiles */
+@media (hover: none) and (pointer: coarse) {
+    .section-article-travaux article:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .section-article-travaux figure img:hover {
+        transform: none;
+    }
+    
+    .section-article-travaux figcaption a:hover {
+        transform: none;
+        box-shadow: 0 5px 15px rgba(213, 5, 5, 0.4);
+    }
+    
+    /* Augmenter la zone de touche pour les boutons */
+    .section-article-travaux figcaption a {
+        padding: 1rem 2.5rem;
+        margin: 1rem 0;
+    }
+    
+    .nav-list li a {
+        padding: 0.8rem 1rem;
+        margin: 0.5rem;
+    }
+}
