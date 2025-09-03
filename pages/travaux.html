@@ -7,47 +7,43 @@
   <meta name="author" content="Alexandre ANSELIN" />
   <meta name="description" content="Découvrez les projets web d'Alexandre Anselin, développeur full stack. ECF1 horoscope interactif, Mini CGR réservation cinéma, APICODE météo - JavaScript, PHP, APIs." />
   <link rel="canonical" href="https://alexandre-anselin-portfolio.netlify.app/pages/travaux.html" />
-  
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles/reset.css" />
+  <link rel="stylesheet" href="../styles/travaux.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+
   <!-- Open Graph -->
+  <meta property="og:type" content="website" />
   <meta property="og:title" content="Mes Travaux - Alexandre Anselin | Projets Web Full Stack" />
   <meta property="og:description" content="Découvrez mes projets web : horoscope interactif, réservation cinéma, application météo. Développement JavaScript, PHP, intégration d'APIs." />
   <meta property="og:image" content="https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-ecf1.webp" />
   <meta property="og:url" content="https://alexandre-anselin-portfolio.netlify.app/pages/travaux.html" />
-  <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
-  
-  <!-- Twitter Cards -->
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mes Travaux - Alexandre Anselin | Projets Web Full Stack" />
   <meta name="twitter:description" content="Découvrez mes projets web : horoscope interactif, réservation cinéma, application météo." />
   <meta name="twitter:image" content="https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-ecf1.webp" />
-  
-  <link rel="stylesheet" href="../styles/reset.css" />
-  <link rel="stylesheet" href="../styles/travaux.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-  
+
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "WebSite",
-        "@id": "#website",
-        "url": "https://alexandre-anselin-portfolio.netlify.app/",
-        "name": "Portfolio Alexandre Anselin",
-        "publisher": {
-          "@id": "#alexandre-anselin"
-        }
-      },
-      {
         "@type": "Person",
         "@id": "#alexandre-anselin",
         "name": "Alexandre Anselin",
         "jobTitle": "Développeur Web Full Stack",
-        "url": "https://alexandre-anselin-portfolio.netlify.app/"
+        "birthDate": "1995-12-19",
+        "description": "Développeur web passionné full stack avec des compétences en HTML, CSS, PHP, Symfony, MySQL, JavaScript et intégration d'APIs.",
+        "url": "https://alexandre-anselin-portfolio.netlify.app/",
+        "image": "https://alexandre-anselin-portfolio.netlify.app/images/images-accueil/ghibli-alexandre.webp",
+        "sameAs": ["https://www.linkedin.com/in/alexandre-anselin-577644376/"]
       },
       {
         "@type": "WebPage",
@@ -55,94 +51,14 @@
         "name": "Mes Travaux - Alexandre Anselin",
         "description": "Portfolio des projets web d'Alexandre Anselin : horoscope interactif, réservation cinéma, application météo",
         "url": "https://alexandre-anselin-portfolio.netlify.app/pages/travaux.html",
-        "about": {
-          "@id": "#alexandre-anselin"
-        },
-        "primaryImageOfPage": "https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-ecf1.webp"
-      },
-      {
-        "@type": "ItemList",
-        "@id": "#projets-itemlist",
-        "name": "Projets Web d'Alexandre Anselin",
-        "description": "Liste des réalisations web développées durant la formation développeur web",
-        "itemListOrder": "Ascending",
-        "numberOfItems": 3,
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "item": {
-              "@type": "CreativeWork",
-              "@id": "#ecf1-project",
-              "name": "ECF1 - Horoscope Interactif",
-              "description": "Site horoscope avec affichage des 12 signes et textes au survol. Intégration d'API et JavaScript avancé",
-              "url": "https://ecf1-anselin-alexandre.sidathsoeun.fr/",
-              "dateCreated": "2024",
-              "author": { "@id": "#alexandre-anselin" },
-              "programmingLanguage": ["JavaScript", "HTML", "CSS"],
-              "keywords": ["JavaScript", "API", "HTML", "CSS", "Responsive", "Référencement"],
-              "category": "Frontend Development",
-              "image": "https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-ecf1.webp"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "item": {
-              "@type": "CreativeWork",
-              "@id": "#mini-cgr-project",
-              "name": "Mini CGR - Réservation Cinéma",
-              "description": "Simulateur de réservation de places de cinéma avec espace membre et page admin. Utilisation du Local/Session Storage",
-              "url": "https://alexandre-anselin-mini-cgr-fictif.sidathsoeun.fr/",
-              "dateCreated": "2024",
-              "author": { "@id": "#alexandre-anselin" },
-              "programmingLanguage": ["JavaScript", "HTML", "CSS"],
-              "keywords": ["Local Storage", "Session Storage", "JavaScript", "HTML", "CSS", "Responsive"],
-              "category": "Frontend Development",
-              "image": "https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-mini-cgr.webp"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "item": {
-              "@type": "CreativeWork",
-              "@id": "#apicode-project",
-              "name": "APICODE - Météo et Horoscope",
-              "description": "Application utilisant des API REST pour afficher des données météo et horoscope en temps réel",
-              "url": "https://alexandre-anselin-meteo-horoscope.sidathsoeun.fr/",
-              "dateCreated": "2024",
-              "author": { "@id": "#alexandre-anselin" },
-              "programmingLanguage": ["JavaScript", "HTML", "CSS"],
-              "keywords": ["API REST", "JavaScript", "HTML", "CSS", "Responsive", "Référencement"],
-              "category": "Frontend Development",
-              "image": "https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-meteo-horoscope.webp"
-            }
-          }
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "#breadcrumbs",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Accueil",
-            "item": "https://alexandre-anselin-portfolio.netlify.app/"
-          },
-          {
-            "@type": "ListItem", 
-            "position": 2,
-            "name": "Mes Travaux",
-            "item": "https://alexandre-anselin-portfolio.netlify.app/pages/travaux.html"
-          }
-        ]
+        "isPartOf": { "@id": "#website" },
+        "about": { "@id": "#alexandre-anselin" }
       }
     ]
   }
   </script>
 </head>
+
 <body itemscope itemtype="https://schema.org/WebPage">
     <header class="header-titre" role="banner" itemscope itemtype="https://schema.org/WPHeader">
         <h1 class="titre-arc-en-ciel" itemprop="headline">
