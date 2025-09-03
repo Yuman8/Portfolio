@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Page d'accueil -->
   <url>
     <loc>https://alexandre-anselin-portfolio.netlify.app/</loc>
     <lastmod>2025-09-03</lastmod>
@@ -9,7 +8,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Page CV -->
   <url>
     <loc>https://alexandre-anselin-portfolio.netlify.app/pages/cv.html</loc>
     <lastmod>2025-09-03</lastmod>
@@ -17,7 +15,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Page Qui suis-je -->
   <url>
     <loc>https://alexandre-anselin-portfolio.netlify.app/pages/qui-suis-je.html</loc>
     <lastmod>2025-09-03</lastmod>
@@ -25,7 +22,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Page Travaux -->
   <url>
     <loc>https://alexandre-anselin-portfolio.netlify.app/pages/travaux.html</loc>
     <lastmod>2025-09-03</lastmod>
@@ -33,7 +29,6 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Page Mentions légales -->
   <url>
     <loc>https://alexandre-anselin-portfolio.netlify.app/pages/mentions-legales.html</loc>
     <lastmod>2025-09-03</lastmod>
