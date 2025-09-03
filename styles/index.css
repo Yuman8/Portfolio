@@ -71,6 +71,17 @@ h1 {
 .nav-list li a:hover {
   color: #ff0000;
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 /* ==================== SECTIONS GÉNÉRALES ==================== */
 .section-intro, .section-vie {
@@ -248,7 +259,7 @@ h1 {
   line-height: 1.7rem;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 1.5rem;
-  text-align: justify;
+  text-align: center;
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
