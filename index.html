@@ -32,112 +32,127 @@
 
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "@id": "#alexandre-anselin",
-        "name": "Alexandre Anselin",
-        "jobTitle": "Développeur Web Full Stack",
-        "birthDate": "1995-12-19",
-        "description": "Développeur web passionné full stack avec des compétences en HTML, CSS, PHP, Symfony, MySQL, JavaScript et intégration d'APIs.",
-        "url": "https://alexandre-anselin-portfolio.netlify.app/",
-        "image": "https://alexandre-anselin-portfolio.netlify.app/images/images-accueil/ghibli-alexandre.webp",
-        "sameAs": [
-          "https://www.linkedin.com/in/alexandre-anselin-577644376/"
-        ]
+    {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "#alexandre-anselin",
+      "name": "Alexandre Anselin",
+      "jobTitle": "Développeur Web Full Stack",
+      "birthDate": "1995-12-19",
+      "description": "Développeur web passionné full stack avec des compétences en HTML, CSS, PHP, Symfony, MySQL, JavaScript et intégration d'APIs.",
+      "url": "https://alexandre-anselin-portfolio.netlify.app/",
+      "image": "https://alexandre-anselin-portfolio.netlify.app/images/images-accueil/ghibli-alexandre.webp",
+      "sameAs": [
+        "https://www.linkedin.com/in/alexandre-anselin-577644376/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "#website",
+      "name": "Portfolio Alexandre Anselin",
+      "url": "https://alexandre-anselin-portfolio.netlify.app/",
+      "description": "Portfolio professionnel d'Alexandre Anselin, développeur web full stack.",
+      "author": { "@id": "#alexandre-anselin" },
+      "publisher": { "@id": "#alexandre-anselin" },
+      "inLanguage": "fr-FR"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "#homepage",
+      "name": "Accueil - Portfolio Alexandre Anselin",
+      "description": "Page d'accueil du portfolio d'Alexandre Anselin présentant son profil de développeur web et ses réalisations.",
+      "url": "https://alexandre-anselin-portfolio.netlify.app/",
+      "isPartOf": { "@id": "#website" },
+      "about": { "@id": "#alexandre-anselin" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://alexandre-anselin-portfolio.netlify.app/images/images-accueil/ghibli-alexandre.webp",
+        "width": "400",
+        "height": "400"
       },
-      {
-        "@type": "WebSite",
-        "@id": "#website",
-        "name": "Portfolio Alexandre Anselin",
-        "url": "https://alexandre-anselin-portfolio.netlify.app/",
-        "description": "Portfolio professionnel d'Alexandre Anselin, développeur web full stack.",
-        "author": { "@id": "#alexandre-anselin" },
-        "publisher": { "@id": "#alexandre-anselin" },
-        "inLanguage": "fr-FR"
-      },
-      {
-        "@type": "WebPage",
-        "@id": "#homepage",
-        "name": "Accueil - Portfolio Alexandre Anselin",
-        "description": "Page d'accueil du portfolio d'Alexandre Anselin présentant son profil de développeur web et ses réalisations.",
-        "url": "https://alexandre-anselin-portfolio.netlify.app/",
-        "isPartOf": { "@id": "#website" },
-        "about": { "@id": "#alexandre-anselin" },
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://alexandre-anselin-portfolio.netlify.app/images/images-accueil/ghibli-alexandre.webp",
-          "width": "400",
-          "height": "400"
-        },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://alexandre-anselin-portfolio.netlify.app/" },
-            { "@type": "ListItem", "position": 2, "name": "Qui suis-je", "item": "https://alexandre-anselin-portfolio.netlify.app/pages/qui-suis-je.html" },
-            { "@type": "ListItem", "position": 3, "name": "Travaux", "item": "https://alexandre-anselin-portfolio.netlify.app/pages/travaux.html" },
-            { "@type": "ListItem", "position": 4, "name": "CV", "item": "https://alexandre-anselin-portfolio.netlify.app/pages/cv.html" },
-            { "@type": "ListItem", "position": 5, "name": "Mentions légales", "item": "https://alexandre-anselin-portfolio.netlify.app/pages/mention-legales.html" }
-          ]
-        }
-      },
-      {
-        "@type": "ItemList",
-        "@id": "#travaux",
-        "name": "Mes travaux",
-        "description": "Liste des projets web réalisés par Alexandre Anselin.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
         "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "item": {
-              "@type": "CreativeWork",
-              "name": "Projet ECF1 - Application horoscope",
-              "author": { "@id": "#alexandre-anselin" },
-              "dateCreated": "2024",
-              "programmingLanguage": "HTML, CSS, JavaScript",
-              "category": "Frontend",
-              "keywords": "JavaScript, API, HTML, CSS, Responsive, Référencement",
-              "url": "https://ecf1-anselin-alexandre.sidathsoeun.fr/",
-              "image": "https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-ecf1.webp"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "item": {
-              "@type": "CreativeWork",
-              "name": "Mini CGR - Simulateur de réservation de films",
-              "author": { "@id": "#alexandre-anselin" },
-              "dateCreated": "2024",
-              "programmingLanguage": "HTML, CSS, JavaScript",
-              "category": "Frontend",
-              "keywords": "Local Storage, Session Storage, JavaScript, HTML, CSS, Responsive, Référencement",
-              "url": "https://alexandre-anselin-mini-cgr-fictif.sidathsoeun.fr/",
-              "image": "https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-mini-cgr.webp"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "item": {
-              "@type": "CreativeWork",
-              "name": "Application météo et horoscope API",
-              "author": { "@id": "#alexandre-anselin" },
-              "dateCreated": "2024",
-              "programmingLanguage": "HTML, CSS, JavaScript, API REST",
-              "category": "Frontend",
-              "keywords": "API REST, JavaScript, HTML, CSS, Responsive, Référencement",
-              "url": "https://alexandre-anselin-meteo-horoscope.sidathsoeun.fr/",
-              "image": "https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-meteo-horoscope.webp"
-            }
-          }
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://alexandre-anselin-portfolio.netlify.app/" },
+          { "@type": "ListItem", "position": 2, "name": "Qui suis-je", "item": "https://alexandre-anselin-portfolio.netlify.app/pages/qui-suis-je.html" },
+          { "@type": "ListItem", "position": 3, "name": "Travaux", "item": "https://alexandre-anselin-portfolio.netlify.app/pages/travaux.html" },
+          { "@type": "ListItem", "position": 4, "name": "CV", "item": "https://alexandre-anselin-portfolio.netlify.app/pages/cv.html" },
+          { "@type": "ListItem", "position": 5, "name": "Mentions légales", "item": "https://alexandre-anselin-portfolio.netlify.app/pages/mention-legales.html" }
         ]
       }
-    ]
-  }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "#travaux",
+      "name": "Mes travaux",
+      "description": "Liste des projets web réalisés par Alexandre Anselin.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projet ECF1 - Application horoscope",
+            "author": { "@id": "#alexandre-anselin" },
+            "dateCreated": "2024",
+            "programmingLanguage": "HTML, CSS, JavaScript",
+            "category": "Frontend",
+            "keywords": "JavaScript, API, HTML, CSS, Responsive, Référencement",
+            "url": "https://ecf1-anselin-alexandre.sidathsoeun.fr/",
+            "image": "https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-ecf1.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Mini CGR - Simulateur de réservation de films",
+            "author": { "@id": "#alexandre-anselin" },
+            "dateCreated": "2024",
+            "programmingLanguage": "HTML, CSS, JavaScript",
+            "category": "Frontend",
+            "keywords": "Local Storage, Session Storage, JavaScript, HTML, CSS, Responsive, Référencement",
+            "url": "https://alexandre-anselin-mini-cgr-fictif.sidathsoeun.fr/",
+            "image": "https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-mini-cgr.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Application météo et horoscope API",
+            "author": { "@id": "#alexandre-anselin" },
+            "dateCreated": "2024",
+            "programmingLanguage": "HTML, CSS, JavaScript, API REST",
+            "category": "Frontend",
+            "keywords": "API REST, JavaScript, HTML, CSS, Responsive, Référencement",
+            "url": "https://alexandre-anselin-meteo-horoscope.sidathsoeun.fr/",
+            "image": "https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-meteo-horoscope.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projet SETI - Application PHP full-stack",
+            "author": { "@id": "#alexandre-anselin" },
+            "dateCreated": "2025",
+            "programmingLanguage": "PHP, MySQL, JavaScript, CSS",
+            "category": "Full Stack",
+            "keywords": "PHP, MySQL, CRUD, Railway, Base de données, API REST, Full Stack",
+            "url": "https://php-seti-production.up.railway.app/",
+            "image": "https://alexandre-anselin-portfolio.netlify.app/images/images-accueil/projet-seti.webp"
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 
@@ -213,9 +228,9 @@
 
         <!-- Section CV -->
         <section class="card-cv" aria-labelledby="cv-heading" itemscope itemtype="https://schema.org/DigitalDocument">
-            <header>
+        <header>
                 <h2 id="cv-heading" itemprop="name">CV <strong>Alexandre Anselin</strong></h2>
-            </header>
+        </header>
 
             <figure class="cv-figure">
                 <img src="images/images-accueil/screen-cv.webp" 
@@ -264,160 +279,165 @@
             <header>
                 <h2 id="travaux-heading" itemprop="name">Mes travaux</h2>
                 <p itemprop="description">
-                    Découvrez mes projets web réalisés dans le cadre de ma formation en développement front-end, ainsi que des créations personnelles. 
-                    Chaque projet met en œuvre mes compétences en HTML, CSS, JavaScript et APIs.
+                    Découvrez mes projets web réalisés dans le cadre de ma formation en développement full stack, ainsi que des créations personnelles. 
+                    Chaque projet met en œuvre mes compétences apprises au cours de ma formation et à côté.
                 </p>
             </header>
 
-            <div class="carrousel-travaux" 
-                 role="region" 
-                 aria-label="Carrousel présentant mes réalisations web interactives"
-                 aria-live="polite"
-                 tabindex="0">
-                <ul class="liste-travaux" role="list" itemprop="itemListElement">
-                    <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="item">
-                            <a href="https://ecf1-anselin-alexandre.sidathsoeun.fr/" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                itemprop="url"
-                                aria-label="Découvrir le projet ECF1 - Application horoscope en ligne (ouvre dans un nouvel onglet)">
-                                <figure>
-                                    <img src="images/images-mes-travaux/screen-ecf1.webp" 
-                                        alt="Capture d'écran du projet ECF1 montrant l'interface d'horoscope avec indicateur de chargement" 
-                                        loading="lazy" 
-                                        width="400" 
-                                        height="300" 
-                                        itemprop="image" />
-                                    <figcaption itemprop="description">ECF1 : horoscope en ligne</figcaption>
-                                </figure>
-                            </a>
-                            <meta itemprop="name" content="Projet ECF1 - Application horoscope avec temps de chargement" />
-                            <meta itemprop="dateCreated" content="2024" />
-                            <meta itemprop="author" content="Alexandre Anselin" />
-                            <meta itemprop="programmingLanguage" content="HTML, CSS, JavaScript" />
-                        </article>
-                        <meta itemprop="position" content="1" />
-                    </li>
+        <div class="carrousel-travaux" 
+            role="region" 
+            aria-label="Carrousel présentant mes réalisations web interactives"
+            aria-live="polite"
+            tabindex="0">
+            <ul class="liste-travaux" role="list" itemprop="itemListElement">
+                <!-- Projet 1 -->
+                <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="item">
+                        <a href="https://ecf1-anselin-alexandre.sidathsoeun.fr/" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            itemprop="url"
+                            aria-label="Découvrir le projet ECF1 - Application horoscope en ligne (ouvre dans un nouvel onglet)">
+                            <figure>
+                                <img src="images/images-mes-travaux/screen-ecf1.webp" 
+                                    alt="Capture d'écran du projet ECF1 montrant l'interface d'horoscope avec indicateur de chargement" 
+                                    loading="lazy" 
+                                    width="400" 
+                                    height="300" 
+                                    itemprop="image" />
+                                <figcaption itemprop="description">ECF1 : horoscope en ligne</figcaption>
+                            </figure>
+                        </a>
+                        <meta itemprop="name" content="Projet ECF1 - Application horoscope avec temps de chargement" />
+                        <meta itemprop="dateCreated" content="2024" />
+                        <meta itemprop="author" content="Alexandre Anselin" />
+                        <meta itemprop="programmingLanguage" content="HTML, CSS, JavaScript" />
+                    </article>
+                    <meta itemprop="position" content="1" />
+                </li>
 
-                    <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="item">
-                            <a href="https://alexandre-anselin-mini-cgr-fictif.sidathsoeun.fr/" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                itemprop="url"
-                                aria-label="Découvrir le projet Mini CGR - Simulateur de réservation de films (ouvre dans un nouvel onglet)">
-                                <figure>
-                                    <img src="images/images-mes-travaux/screen-mini-cgr.webp" 
-                                        alt="Capture d'écran du projet Mini CGR présentant l'interface de réservation de films" 
-                                        loading="lazy" 
-                                        width="400" 
-                                        height="300" 
-                                        itemprop="image" />
-                                    <figcaption itemprop="description">Mini CGR : simulateur de réservation de films fictif</figcaption>
-                                </figure>
-                            </a>
-                            <meta itemprop="name" content="Mini CGR - Simulateur de réservation de films" />
-                            <meta itemprop="dateCreated" content="2024" />
-                            <meta itemprop="author" content="Alexandre Anselin" />
-                            <meta itemprop="programmingLanguage" content="HTML, CSS, JavaScript" />
-                        </article>
-                        <meta itemprop="position" content="2" />
-                    </li>
+                <!-- Projet 2 -->
+                <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="item">
+                        <a href="https://alexandre-anselin-mini-cgr-fictif.sidathsoeun.fr/" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            itemprop="url"
+                            aria-label="Découvrir le projet Mini CGR - Simulateur de réservation de films (ouvre dans un nouvel onglet)">
+                            <figure>
+                                <img src="images/images-mes-travaux/screen-mini-cgr.webp" 
+                                    alt="Capture d'écran du projet Mini CGR présentant l'interface de réservation de films" 
+                                    loading="lazy" 
+                                    width="400" 
+                                    height="300" 
+                                    itemprop="image" />
+                                <figcaption itemprop="description">Mini CGR : simulateur de réservation de films fictif</figcaption>
+                            </figure>
+                        </a>
+                        <meta itemprop="name" content="Mini CGR - Simulateur de réservation de films" />
+                        <meta itemprop="dateCreated" content="2024" />
+                        <meta itemprop="author" content="Alexandre Anselin" />
+                        <meta itemprop="programmingLanguage" content="HTML, CSS, JavaScript" />
+                    </article>
+                    <meta itemprop="position" content="2" />
+                </li>
 
-                    <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="item">
-                            <a href="https://alexandre-anselin-meteo-horoscope.sidathsoeun.fr/" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                itemprop="url"
-                                aria-label="Découvrir l'application météo et horoscope avec API (ouvre dans un nouvel onglet)">
-                                <figure>
-                                    <img src="images/images-mes-travaux/screen-meteo-horoscope.webp" 
-                                        alt="Capture d'écran de l'application météo et horoscope montrant l'intégration d'APIs" 
-                                        loading="lazy" 
-                                        width="400" 
-                                        height="300" 
-                                        itemprop="image" />
-                                    <figcaption itemprop="description">Application API : météo dynamique et horoscope personnalisé</figcaption>
-                                </figure>
-                            </a>
-                            <meta itemprop="name" content="Application météo et horoscope API" />
-                            <meta itemprop="dateCreated" content="2024" />
-                            <meta itemprop="author" content="Alexandre Anselin" />
-                            <meta itemprop="programmingLanguage" content="HTML, CSS, JavaScript, API REST" />
-                        </article>
-                        <meta itemprop="position" content="3" />
-                    </li>
+                <!-- Projet 3 -->
+                <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="item">
+                        <a href="https://alexandre-anselin-meteo-horoscope.sidathsoeun.fr/" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            itemprop="url"
+                            aria-label="Découvrir l'application météo et horoscope avec API (ouvre dans un nouvel onglet)">
+                            <figure>
+                                <img src="images/images-mes-travaux/screen-meteo-horoscope.webp" 
+                                    alt="Capture d'écran de l'application météo et horoscope montrant l'intégration d'APIs" 
+                                    loading="lazy" 
+                                    width="400" 
+                                    height="300" 
+                                    itemprop="image" />
+                                <figcaption itemprop="description">Application API : météo dynamique et horoscope personnalisé</figcaption>
+                            </figure>
+                        </a>
+                        <meta itemprop="name" content="Application météo et horoscope API" />
+                        <meta itemprop="dateCreated" content="2024" />
+                        <meta itemprop="author" content="Alexandre Anselin" />
+                        <meta itemprop="programmingLanguage" content="HTML, CSS, JavaScript, API REST" />
+                    </article>
+                    <meta itemprop="position" content="3" />
+                </li>
 
-                    <!-- Duplication pour effet carrousel infini -->
-                    <li role="listitem" aria-hidden="true">
-                        <article itemscope itemtype="https://schema.org/CreativeWork">
-                            <a href="https://ecf1-anselin-alexandre.sidathsoeun.fr/" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                itemprop="url"
-                                tabindex="-1"
-                                aria-label="Projet ECF1 - Application horoscope en ligne (dupliquer pour carrousel)">
-                                <figure>
-                                    <img src="images/images-mes-travaux/screen-ecf1.webp" 
-                                        alt="" 
-                                        loading="lazy" 
-                                        width="400" 
-                                        height="300" 
-                                        itemprop="image" />
-                                    <figcaption itemprop="description">ECF1 : horoscope en ligne</figcaption>
-                                </figure>
-                            </a>
-                            <meta itemprop="name" content="Projet ECF1 - affichage avec temps de chargement horoscope" />
-                        </article>
-                    </li>
+                <!-- Projet 4 (SETI) -->
+                <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="item">
+                        <a href="https://php-seti-production.up.railway.app/" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            itemprop="url"
+                            aria-label="Découvrir le projet SETI - Application de communication interplanétaire PHP (ouvre dans un nouvel onglet)">
+                            <figure>
+                                <img src="images/images-mes-travaux/projet-seti.webp" 
+                                    alt="Capture d'écran du projet SETI montrant l'interface de communication avec les planètes" 
+                                    loading="lazy" 
+                                    width="400" 
+                                    height="300" 
+                                    itemprop="image" />
+                                <figcaption itemprop="description">SETI : Communication interplanétaire avec base de données</figcaption>
+                            </figure>
+                        </a>
+                        <meta itemprop="name" content="Projet SETI - Application PHP full-stack" />
+                        <meta itemprop="dateCreated" content="2025" />
+                        <meta itemprop="author" content="Alexandre Anselin" />
+                        <meta itemprop="programmingLanguage" content="HTML, CSS, JavaScript, PHP, MySQL" />
+                    </article>
+                    <meta itemprop="position" content="4" />
+                </li>
 
-                    <li role="listitem" aria-hidden="true">
-                        <article itemscope itemtype="https://schema.org/CreativeWork">
-                            <a href="https://alexandre-anselin-mini-cgr-fictif.sidathsoeun.fr/" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                itemprop="url"
-                                tabindex="-1"
-                                aria-label="Projet Mini CGR - Simulateur de réservation de films (dupliquer pour carrousel)">
-                                <figure>
-                                    <img src="images/images-mes-travaux/screen-mini-cgr.webp" 
-                                        alt="" 
-                                        loading="lazy" 
-                                        width="400" 
-                                        height="300" 
-                                        itemprop="image" />
-                                    <figcaption itemprop="description">Mini CGR : simulateur de réservation de films fictif</figcaption>
-                                </figure>
-                            </a>
-                            <meta itemprop="name" content="Mini CGR - Simulateur de réservation de films" />
-                        </article>
-                    </li>
+                <!-- DUPLICATION POUR L’EFFET INFINI -->
+                <li role="listitem" aria-hidden="true">
+                    <article>
+                        <a href="https://ecf1-anselin-alexandre.sidathsoeun.fr/" tabindex="-1">
+                            <figure>
+                                <img src="images/images-mes-travaux/screen-ecf1.webp" alt="" loading="lazy" width="400" height="300" />
+                                <figcaption>ECF1 : horoscope en ligne</figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                </li>
+                <li role="listitem" aria-hidden="true">
+                    <article>
+                        <a href="https://alexandre-anselin-mini-cgr-fictif.sidathsoeun.fr/" tabindex="-1">
+                            <figure>
+                                <img src="images/images-mes-travaux/screen-mini-cgr.webp" alt="" loading="lazy" width="400" height="300" />
+                                <figcaption>Mini CGR : simulateur de réservation de films fictif</figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                </li>
+                <li role="listitem" aria-hidden="true">
+                    <article>
+                        <a href="https://alexandre-anselin-meteo-horoscope.sidathsoeun.fr/" tabindex="-1">
+                            <figure>
+                                <img src="images/images-mes-travaux/screen-meteo-horoscope.webp" alt="" loading="lazy" width="400" height="300" />
+                                <figcaption>Application API : météo dynamique et horoscope personnalisé</figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                </li>
+                <li role="listitem" aria-hidden="true">
+                    <article>
+                        <a href="https://php-seti-production.up.railway.app/" tabindex="-1">
+                            <figure>
+                                <img src="images/images-accueil/projet-seti.webp" alt="" loading="lazy" width="400" height="300" />
+                                <figcaption>SETI : Communication interplanétaire</figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+        </div>
 
-                    <li role="listitem" aria-hidden="true">
-                        <article itemscope itemtype="https://schema.org/CreativeWork">
-                            <a href="https://alexandre-anselin-meteo-horoscope.sidathsoeun.fr/" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                itemprop="url"
-                                tabindex="-1"
-                                aria-label="Application météo et horoscope avec API (dupliquer pour carrousel)">
-                                <figure>
-                                    <img src="images/images-mes-travaux/screen-meteo-horoscope.webp" 
-                                        alt="" 
-                                        loading="lazy" 
-                                        width="400" 
-                                        height="300" 
-                                        itemprop="image" />
-                                    <figcaption itemprop="description">Application API : météo dynamique et horoscope personnalisé</figcaption>
-                                </figure>
-                            </a>
-                            <meta itemprop="name" content="Application météo et horoscope API" />
-                        </article>
-                    </li>
-                </ul>
-            </div>
 
             <div class="btn-travaux">
                 <a href="pages/travaux.html" 

@@ -391,16 +391,15 @@ h1 {
   padding: 0;
   margin: 0;
   gap: 2rem;
-  transition: transform 0.5s ease;
-  animation: scroll 20s infinite linear;
+  animation: scroll 8s linear infinite;
 }
 
 @keyframes scroll {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-100%);
+  to {
+    transform: translateX(-50%);
   }
 }
 
@@ -436,16 +435,18 @@ h1 {
 
 .liste-travaux figure {
   margin: 0;
-  height: 200px;
+  height: 250px; /* +50px pour donner plus de place aux screenshots */
   overflow: hidden;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* petit séparateur élégant */
 }
 
 .liste-travaux img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* homogène, recadrage esthétique */
   transition: transform 0.3s ease;
 }
+
 
 .liste-travaux article:hover img {
   transform: scale(1.1);

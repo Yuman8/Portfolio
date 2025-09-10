@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mes Travaux - Alexandre Anselin | Projets Web Full Stack</title>
   <meta name="author" content="Alexandre ANSELIN" />
-  <meta name="description" content="Découvrez les projets web d'Alexandre Anselin, développeur full stack. ECF1 horoscope interactif, Mini CGR réservation cinéma, APICODE météo - JavaScript, PHP, APIs." />
+  <meta name="description" content="Découvrez les projets web d'Alexandre Anselin, développeur full stack. Horoscope interactif, Mini CGR réservation cinéma, APICODE météo, SETI simulation de signaux interplanétaires." />
   <link rel="canonical" href="https://alexandre-anselin-portfolio.netlify.app/pages/travaux.html" />
 
   <!-- Styles -->
@@ -18,7 +18,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Mes Travaux - Alexandre Anselin | Projets Web Full Stack" />
-  <meta property="og:description" content="Découvrez mes projets web : horoscope interactif, réservation cinéma, application météo. Développement JavaScript, PHP, intégration d'APIs." />
+  <meta property="og:description" content="Découvrez mes projets web : horoscope interactif, réservation cinéma, application météo et SETI." />
   <meta property="og:image" content="https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-ecf1.webp" />
   <meta property="og:url" content="https://alexandre-anselin-portfolio.netlify.app/pages/travaux.html" />
   <meta property="og:locale" content="fr_FR" />
@@ -26,7 +26,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mes Travaux - Alexandre Anselin | Projets Web Full Stack" />
-  <meta name="twitter:description" content="Découvrez mes projets web : horoscope interactif, réservation cinéma, application météo." />
+  <meta name="twitter:description" content="Découvrez mes projets web : horoscope interactif, réservation cinéma, application météo et SETI." />
   <meta name="twitter:image" content="https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-ecf1.webp" />
 
   <!-- JSON-LD Schema -->
@@ -49,7 +49,7 @@
         "@type": "WebPage",
         "@id": "#travaux-page",
         "name": "Mes Travaux - Alexandre Anselin",
-        "description": "Portfolio des projets web d'Alexandre Anselin : horoscope interactif, réservation cinéma, application météo",
+        "description": "Portfolio des projets web d'Alexandre Anselin : horoscope interactif, réservation cinéma, application météo et SETI",
         "url": "https://alexandre-anselin-portfolio.netlify.app/pages/travaux.html",
         "isPartOf": { "@id": "#website" },
         "about": { "@id": "#alexandre-anselin" }
@@ -92,7 +92,7 @@
                  aria-label="Portfolio de mes projets web">
             <h2 id="projects-heading" class="sr-only" itemprop="name">Projets réalisés</h2>
             
-            <!-- Projet 1 -->
+            <!-- Projet 1 : Horoscope -->
             <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="itemListElement">
                 <figure>
                     <img src="../images/images-mes-travaux/screen-ecf1.webp" 
@@ -123,7 +123,7 @@
                 </figure>
             </article>
 
-            <!-- Projet 2 -->
+            <!-- Projet 2 : Mini CGR -->
             <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="itemListElement">
                 <figure>
                     <img src="../images/images-mes-travaux/screen-mini-cgr.webp" 
@@ -154,7 +154,7 @@
                 </figure>
             </article>
 
-            <!-- Projet 3 -->
+            <!-- Projet 3 : APICODE -->
             <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="itemListElement">
                 <figure>
                     <img src="../images/images-mes-travaux/screen-meteo-horoscope.webp" 
@@ -169,10 +169,10 @@
                             <p class="project-meta" aria-label="Informations du projet">
                                 <time datetime="2024" itemprop="dateCreated">2024</time> • 
                                 <span itemprop="category">Frontend</span> • 
-                                <span itemprop="keywords">API REST, Javascript, HTML, CSS, Responsive, Référencement</span>
+                                <span itemprop="keywords">API REST, JavaScript, HTML, CSS, Responsive, Référencement</span>
                             </p>
                         </header>
-                        <p itemprop="description">L'objectif de ce site était de mettre en lumière l'utilisation d'API REST utilisées pour récupérer des données météo et d'horoscope et qu'elles soient affichées à jour</p>
+                        <p itemprop="description">L'objectif de ce site était de mettre en lumière l'utilisation d'API REST utilisées pour récupérer des données météo et d'horoscope et qu'elles soient affichées à jour.</p>
                         <a href="https://alexandre-anselin-meteo-horoscope.sidathsoeun.fr/" 
                            itemprop="url" 
                            target="_blank"
@@ -184,8 +184,39 @@
                     </figcaption>
                 </figure>
             </article>
+
+            <!-- Projet 4 : SETI -->
+            <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="itemListElement">
+                <figure>
+                    <img src="../images/images-mes-travaux/projet-seti.webp" 
+                         alt="Capture d'écran du projet SETI montrant l'envoi de signaux vers des planètes avec une interface web interactive"
+                         itemprop="image"
+                         width="400"
+                         height="300"
+                         loading="lazy">
+                    <figcaption>
+                        <header>
+                            <h3 itemprop="name">SETI</h3>
+                            <p class="project-meta" aria-label="Informations du projet">
+                                <time datetime="2025" itemprop="dateCreated">2025</time> • 
+                                <span itemprop="category">Full Stack</span> • 
+                                <span itemprop="keywords">PHP, MySQL, JavaScript, API REST, AJAX, PDO, HTML, CSS</span>
+                            </p>
+                        </header>
+                        <p itemprop="description">Ce projet pédagogique simule l'envoi de signaux vers des planètes. Il intègre une API REST connectée à une base de données MySQL, une interface publique dynamique et un backoffice sécurisé. Utilisation de PHP (PDO), JavaScript (AJAX), JSON et MySQL.</p>
+                        <a href="https://php-seti-production.up.railway.app/" 
+                           itemprop="url" 
+                           target="_blank"
+                           rel="external noopener noreferrer"
+                           aria-label="Visiter le site SETI - Simulation d'envoi de signaux interplanétaires (ouvre dans un nouvel onglet)"
+                           title="Découvrir le projet SETI avec API REST et base de données">Voir le site</a>
+                        <meta itemprop="author" content="Alexandre Anselin" />
+                        <meta itemprop="programmingLanguage" content="PHP, MySQL, JavaScript, HTML, CSS" />
+                    </figcaption>
+                </figure>
+            </article>
             
-            <meta itemprop="numberOfItems" content="3" />
+            <meta itemprop="numberOfItems" content="4" />
             <meta itemprop="description" content="Collection des projets web développés par Alexandre Anselin" />
         </section>
     </main>
