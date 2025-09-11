@@ -391,15 +391,16 @@ h1 {
   padding: 0;
   margin: 0;
   gap: 2rem;
-  animation: scroll 8s linear infinite;
+  animation: scrollInfini 15s linear infinite; /* Durée plus lente pour plus de fluidité */
 }
 
 @keyframes scroll {
-  from {
+  0% {
     transform: translateX(0);
   }
-  to {
-    transform: translateX(-50%);
+  100% {
+    /* Calcul précis basé sur la largeur réelle des éléments */
+    transform: translateX(calc(-320px * 4 - 6rem));
   }
 }
 
@@ -568,6 +569,16 @@ footer nav a:hover {
   .liste-travaux figure {
     height: 250px;
   }
+  
+  /* Animation carrousel corrigée pour très grands écrans */
+  @keyframes scrollInfini {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-350px * 4 - 8rem));
+    }
+  }
 }
 
 /* ==================== DESKTOP/LAPTOP (1200px - 1919px) ==================== */
@@ -600,6 +611,16 @@ footer nav a:hover {
   
   .cv-miniature {
     max-width: 420px;
+  }
+  
+  /* Animation carrousel standard pour desktop/laptop */
+  @keyframes scrollInfini {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-320px * 4 - 8rem));
+    }
   }
 }
 
@@ -665,12 +686,13 @@ footer nav a:hover {
     height: 180px;
   }
   
-  @keyframes scroll {
+  /* Animation carrousel corrigée pour tablette paysage */
+  @keyframes scrollInfini {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-280px * 4 - 6rem));
+      transform: translateX(calc(-280px * 4 - 8rem));
     }
   }
 }
@@ -771,12 +793,13 @@ footer nav a:hover {
     height: 160px;
   }
   
-  @keyframes scroll {
+  /* Animation carrousel corrigée pour tablette portrait */
+  @keyframes scrollInfini {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-250px * 4 - 6rem));
+      transform: translateX(calc(-250px * 4 - 8rem));
     }
   }
   
@@ -897,12 +920,13 @@ footer nav a:hover {
     animation-play-state: running;
   }
   
-  @keyframes scroll {
+  /* Animation carrousel corrigée pour smartphone grand */
+  @keyframes scrollInfini {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-220px * 5 - 8rem));
+      transform: translateX(calc(-220px * 4 - 8rem));
     }
   }
   
@@ -1072,12 +1096,13 @@ footer nav a:hover {
     animation-play-state: running;
   }
   
-  @keyframes scroll {
+  /* Animation carrousel corrigée pour smartphone petit */
+  @keyframes scrollInfini {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-180px * 6 - 10rem));
+      transform: translateX(calc(-180px * 4 - 8rem));
     }
   }
   
