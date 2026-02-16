@@ -19,7 +19,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Mes Travaux - Alexandre Anselin | Projets Web Full Stack" />
   <meta property="og:description" content="Découvrez mes projets web : horoscope interactif, réservation cinéma, application météo et SETI." />
-  <meta property="og:image" content="https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-ecf1.webp" />
+  <meta property="og:image" content="https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/images-travaux-horoscope/screenhoroscopeaccueil.webp" />
   <meta property="og:url" content="https://alexandre-anselin-portfolio.netlify.app/pages/travaux.html" />
   <meta property="og:locale" content="fr_FR" />
 
@@ -27,7 +27,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mes Travaux - Alexandre Anselin | Projets Web Full Stack" />
   <meta name="twitter:description" content="Découvrez mes projets web : horoscope interactif, réservation cinéma, application météo et SETI." />
-  <meta name="twitter:image" content="https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/screen-ecf1.webp" />
+  <meta name="twitter:image" content="https://alexandre-anselin-portfolio.netlify.app/images/images-mes-travaux/images-travaux-horoscope/screenhoroscopeaccueil.webp" />
 
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
@@ -81,7 +81,17 @@
     <main role="main" itemprop="mainContentOfPage">
         <section class="section-intro-travaux" aria-labelledby="intro-heading">
             <h2 id="intro-heading" itemprop="headline">Mes travaux</h2>
-            <p itemprop="description">Sur cette page vous pourrez retrouver mes différents travaux déployés réalisés au cours de ma formation de développeur web</p>
+            <p itemprop="description">Sur cette page vous pourrez retrouver mes différents travaux réalisés au cours de ma formation de développeur web</p>
+            
+            <!-- Bandeau Projets Archivés -->
+            <div class="archive-banner" role="note" aria-label="Information sur l'archivage des projets">
+                <svg class="archive-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <p><strong>Projets archivés</strong> — Les sites ne sont plus hébergés. Découvrez les captures d'écran et le code de chaque projet.</p>
+            </div>
         </section>
 
         <section class="section-article-travaux" 
@@ -93,17 +103,57 @@
             <h2 id="projects-heading" class="sr-only" itemprop="name">Projets réalisés</h2>
             
             <!-- Projet 1 : Horoscope -->
-            <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="itemListElement">
+            <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="itemListElement" data-project="horoscope">
+                <span class="project-badge" aria-label="Statut du projet">🔒 Archivé</span>
                 <figure>
-                    <img src="../images/images-mes-travaux/screen-ecf1.webp" 
-                         alt="Capture d'écran de l'interface horoscope ECF1 montrant les 12 signes du zodiaque avec interaction au survol"
-                         itemprop="image"
-                         width="400"
-                         height="300"
-                         loading="lazy">
+                    <div class="project-gallery">
+                        <!-- Image principale -->
+                        <div class="main-image-container">
+                            <img src="../images/images-mes-travaux/images-travaux-horoscope/screenhoroscopeaccueil.webp" 
+                                 alt="Capture d'écran de l'accueil du site horoscope ECF1 montrant les 12 signes du zodiaque"
+                                 itemprop="image"
+                                 class="main-image gallery-trigger"
+                                 data-index="0"
+                                 width="400"
+                                 height="300"
+                                 loading="lazy">
+                        </div>
+                        
+                        <!-- Vignettes -->
+                        <div class="thumbnails-container" role="list" aria-label="Galerie de captures d'écran du projet Horoscope">
+                            <img src="../images/images-mes-travaux/images-travaux-horoscope/screenhoroscopeaccueil.webp"
+                                 alt="Accueil du site horoscope"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="0"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                            <img src="../images/images-mes-travaux/images-travaux-horoscope/animationhoroscope.webp"
+                                 alt="Animation au survol des signes astrologiques"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="1"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                            <img src="../images/images-mes-travaux/images-travaux-horoscope/codehoroscope.webp"
+                                 alt="Extrait du code JavaScript du projet horoscope"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="2"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                        </div>
+                    </div>
+                    
                     <figcaption>
                         <header>
-                            <h3 itemprop="name">ECF1</h3>
+                            <h3 itemprop="name">ECF1 - Horoscope</h3>
                             <p class="project-meta" aria-label="Informations du projet">
                                 <time datetime="2024" itemprop="dateCreated">2024</time> • 
                                 <span itemprop="category">Frontend</span> • 
@@ -111,12 +161,11 @@
                             </p>
                         </header>
                         <p itemprop="description">L'objectif de ce site était de mettre en lumière les compétences front-end apprises. C'est un site horoscope qui affiche les 12 signes avec au passage de la souris sur l'image, un texte disant votre horoscope. Utilisation de JavaScript, appel API, HTML, CSS !</p>
-                        <a href="https://ecf1-anselin-alexandre.sidathsoeun.fr/" 
-                           itemprop="url" 
-                           target="_blank"
-                           rel="external noopener noreferrer"
-                           aria-label="Visiter le site ECF1 - Horoscope interactif (ouvre dans un nouvel onglet)"
-                           title="Découvrir le projet horoscope avec interactions JavaScript">Voir le site</a>
+                        <button class="btn-voir-screenshots" 
+                                aria-label="Ouvrir la galerie de captures d'écran du projet Horoscope"
+                                title="Découvrir les screenshots et le code du projet">
+                            Voir les screenshots
+                        </button>
                         <meta itemprop="author" content="Alexandre Anselin" />
                         <meta itemprop="programmingLanguage" content="JavaScript, HTML, CSS" />
                     </figcaption>
@@ -124,14 +173,72 @@
             </article>
 
             <!-- Projet 2 : Mini CGR -->
-            <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="itemListElement">
+            <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="itemListElement" data-project="cgr">
+                <span class="project-badge" aria-label="Statut du projet">🔒 Archivé</span>
                 <figure>
-                    <img src="../images/images-mes-travaux/screen-mini-cgr.webp" 
-                         alt="Capture d'écran du simulateur de réservation Mini CGR montrant l'interface de sélection de places de cinéma"
-                         itemprop="image"
-                         width="400"
-                         height="300"
-                         loading="lazy">
+                    <div class="project-gallery">
+                        <!-- Image principale -->
+                        <div class="main-image-container">
+                            <img src="../images/images-mes-travaux/images-travaux-cgr/accueilCgrFictif.webp" 
+                                 alt="Capture d'écran de l'accueil du simulateur de réservation Mini CGR"
+                                 itemprop="image"
+                                 class="main-image gallery-trigger"
+                                 data-index="0"
+                                 width="400"
+                                 height="300"
+                                 loading="lazy">
+                        </div>
+                        
+                        <!-- Vignettes -->
+                        <div class="thumbnails-container" role="list" aria-label="Galerie de captures d'écran du projet Mini CGR">
+                            <img src="../images/images-mes-travaux/images-travaux-cgr/accueilCgrFictif.webp"
+                                 alt="Accueil du site Mini CGR"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="0"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                            <img src="../images/images-mes-travaux/images-travaux-cgr/cgrreservation.webp"
+                                 alt="Interface de réservation de places de cinéma"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="1"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                            <img src="../images/images-mes-travaux/images-travaux-cgr/cgrfictiftestinscription.webp"
+                                 alt="Page d'inscription et espace membre"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="2"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                            <img src="../images/images-mes-travaux/images-travaux-cgr/cgradmin.webp"
+                                 alt="Page d'administration du site"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="3"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                            <img src="../images/images-mes-travaux/images-travaux-cgr/codeCgr.webp"
+                                 alt="Extrait du code JavaScript avec local storage"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="4"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                        </div>
+                    </div>
+                    
                     <figcaption>
                         <header>
                             <h3 itemprop="name">Mini CGR</h3>
@@ -142,12 +249,11 @@
                             </p>
                         </header>
                         <p itemprop="description">L'objectif de ce site était de mettre en lumière les compétences frontend avec l'utilisation du local et session storage, ainsi que l'ajout d'une page admin et d'un espace membre. C'est un site fictif de réservation de places de cinéma. Malheureusement en l'absence de base de données, l'utilisation est limitée !</p>
-                        <a href="https://alexandre-anselin-mini-cgr-fictif.sidathsoeun.fr/" 
-                           itemprop="url" 
-                           target="_blank"
-                           rel="external noopener noreferrer"
-                           aria-label="Visiter le site Mini CGR - Réservation cinéma fictive (ouvre dans un nouvel onglet)"
-                           title="Explorer le simulateur de réservation de cinéma avec espace membre">Voir le site</a>
+                        <button class="btn-voir-screenshots" 
+                                aria-label="Ouvrir la galerie de captures d'écran du projet Mini CGR"
+                                title="Explorer les screenshots du simulateur de réservation">
+                            Voir les screenshots
+                        </button>
                         <meta itemprop="author" content="Alexandre Anselin" />
                         <meta itemprop="programmingLanguage" content="JavaScript, HTML, CSS" />
                     </figcaption>
@@ -155,14 +261,63 @@
             </article>
 
             <!-- Projet 3 : APICODE -->
-            <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="itemListElement">
+            <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="itemListElement" data-project="apicode">
+                <span class="project-badge" aria-label="Statut du projet">🔒 Archivé</span>
                 <figure>
-                    <img src="../images/images-mes-travaux/screen-meteo-horoscope.webp" 
-                         alt="Capture d'écran de l'application APICODE affichant les données météorologiques et horoscope en temps réel"
-                         itemprop="image"
-                         width="400"
-                         height="300"
-                         loading="lazy">
+                    <div class="project-gallery">
+                        <!-- Image principale -->
+                        <div class="main-image-container">
+                            <img src="../images/images-mes-travaux/images-travaux-apicode/apicodeaccueil.webp" 
+                                 alt="Capture d'écran de l'accueil de l'application APICODE météo et horoscope"
+                                 itemprop="image"
+                                 class="main-image gallery-trigger"
+                                 data-index="0"
+                                 width="400"
+                                 height="300"
+                                 loading="lazy">
+                        </div>
+                        
+                        <!-- Vignettes -->
+                        <div class="thumbnails-container" role="list" aria-label="Galerie de captures d'écran du projet APICODE">
+                            <img src="../images/images-mes-travaux/images-travaux-apicode/apicodeaccueil.webp"
+                                 alt="Accueil de l'application APICODE"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="0"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                            <img src="../images/images-mes-travaux/images-travaux-apicode/screen-page-meteo.webp"
+                                 alt="Page météo avec données en temps réel"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="1"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                            <img src="../images/images-mes-travaux/images-travaux-apicode/screenhoroscope.webp"
+                                 alt="Page horoscope avec API REST"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="2"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                            <img src="../images/images-mes-travaux/images-travaux-apicode/apicodecode.webp"
+                                 alt="Extrait du code d'intégration des APIs"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="3"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                        </div>
+                    </div>
+                    
                     <figcaption>
                         <header>
                             <h3 itemprop="name">APICODE</h3>
@@ -173,12 +328,11 @@
                             </p>
                         </header>
                         <p itemprop="description">L'objectif de ce site était de mettre en lumière l'utilisation d'API REST utilisées pour récupérer des données météo et d'horoscope et qu'elles soient affichées à jour.</p>
-                        <a href="https://alexandre-anselin-meteo-horoscope.sidathsoeun.fr/" 
-                           itemprop="url" 
-                           target="_blank"
-                           rel="external noopener noreferrer"
-                           aria-label="Visiter le site APICODE - Météo et horoscope en temps réel (ouvre dans un nouvel onglet)"
-                           title="Découvrir l'application d'intégration d'APIs météo et horoscope">Voir le site</a>
+                        <button class="btn-voir-screenshots" 
+                                aria-label="Ouvrir la galerie de captures d'écran du projet APICODE"
+                                title="Découvrir l'intégration d'APIs météo et horoscope">
+                            Voir les screenshots
+                        </button>
                         <meta itemprop="author" content="Alexandre Anselin" />
                         <meta itemprop="programmingLanguage" content="JavaScript, HTML, CSS" />
                     </figcaption>
@@ -186,14 +340,63 @@
             </article>
 
             <!-- Projet 4 : SETI -->
-            <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="itemListElement">
+            <article itemscope itemtype="https://schema.org/CreativeWork" itemprop="itemListElement" data-project="seti">
+                <span class="project-badge" aria-label="Statut du projet">🔒 Archivé</span>
                 <figure>
-                    <img src="../images/images-mes-travaux/projet-seti.webp" 
-                         alt="Capture d'écran du projet SETI montrant l'envoi de signaux vers des planètes avec une interface web interactive"
-                         itemprop="image"
-                         width="400"
-                         height="300"
-                         loading="lazy">
+                    <div class="project-gallery">
+                        <!-- Image principale -->
+                        <div class="main-image-container">
+                            <img src="../images/images-mes-travaux/images-travaux-seti/accueilsetiprojet.webp" 
+                                 alt="Capture d'écran de l'accueil du projet SETI simulation de signaux interplanétaires"
+                                 itemprop="image"
+                                 class="main-image gallery-trigger"
+                                 data-index="0"
+                                 width="400"
+                                 height="300"
+                                 loading="lazy">
+                        </div>
+                        
+                        <!-- Vignettes -->
+                        <div class="thumbnails-container" role="list" aria-label="Galerie de captures d'écran du projet SETI">
+                            <img src="../images/images-mes-travaux/images-travaux-seti/accueilsetiprojet.webp"
+                                 alt="Accueil du projet SETI"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="0"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                            <img src="../images/images-mes-travaux/images-travaux-seti/setiAdmin1.webp"
+                                 alt="Interface d'administration SETI - partie 1"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="1"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                            <img src="../images/images-mes-travaux/images-travaux-seti/setiadmin2.webp"
+                                 alt="Interface d'administration SETI - partie 2"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="2"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                            <img src="../images/images-mes-travaux/images-travaux-seti/seticode.webp"
+                                 alt="Extrait du code PHP et API REST du projet SETI"
+                                 class="thumbnail gallery-trigger"
+                                 data-index="3"
+                                 role="listitem"
+                                 tabindex="0"
+                                 width="100"
+                                 height="75"
+                                 loading="lazy">
+                        </div>
+                    </div>
+                    
                     <figcaption>
                         <header>
                             <h3 itemprop="name">SETI</h3>
@@ -204,12 +407,11 @@
                             </p>
                         </header>
                         <p itemprop="description">Ce projet pédagogique simule l'envoi de signaux vers des planètes. Il intègre une API REST connectée à une base de données MySQL, une interface publique dynamique et un backoffice sécurisé. Utilisation de PHP (PDO), JavaScript (AJAX), JSON et MySQL.</p>
-                        <a href="https://php-seti-production.up.railway.app/" 
-                           itemprop="url" 
-                           target="_blank"
-                           rel="external noopener noreferrer"
-                           aria-label="Visiter le site SETI - Simulation d'envoi de signaux interplanétaires (ouvre dans un nouvel onglet)"
-                           title="Découvrir le projet SETI avec API REST et base de données">Voir le site</a>
+                        <button class="btn-voir-screenshots" 
+                                aria-label="Ouvrir la galerie de captures d'écran du projet SETI"
+                                title="Découvrir le projet full stack avec API REST">
+                            Voir les screenshots
+                        </button>
                         <meta itemprop="author" content="Alexandre Anselin" />
                         <meta itemprop="programmingLanguage" content="PHP, MySQL, JavaScript, HTML, CSS" />
                     </figcaption>
@@ -220,6 +422,34 @@
             <meta itemprop="description" content="Collection des projets web développés par Alexandre Anselin" />
         </section>
     </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Galerie de captures d'écran du projet">
+        <button class="lightbox-close" aria-label="Fermer la galerie" title="Fermer (Échap)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        
+        <button class="lightbox-nav lightbox-prev" aria-label="Image précédente" title="Précédent (Flèche gauche)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-image" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+            <div class="lightbox-counter" id="lightbox-counter" aria-live="polite"></div>
+        </div>
+        
+        <button class="lightbox-nav lightbox-next" aria-label="Image suivante" title="Suivant (Flèche droite)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+    </div>
 
     <footer itemscope itemtype="https://schema.org/WPFooter" role="contentinfo" aria-label="Informations du site et liens légaux">
         <p itemscope itemtype="https://schema.org/Organization">
@@ -239,6 +469,9 @@
             </a>
         </nav>
     </footer>
+    
+    <!-- Script JavaScript -->
+    <script src="../scripts/travaux.js"></script>
     
 </body>
 </html>
