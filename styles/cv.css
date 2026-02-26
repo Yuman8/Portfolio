@@ -877,3 +877,276 @@ footer nav a:hover {
         padding: 1rem;
     }
 }
+/* ==================== STYLES ADDITIONNELS POUR CV OPTIMISÉ ==================== */
+/* À AJOUTER À LA FIN DE TON FICHIER cv.css EXISTANT */
+
+/* ========== SOUS-LISTES DÉTAILS (FORMATIONS, EXPÉRIENCE, PROJETS) ========== */
+
+.details-formation,
+.details-experience,
+.details-projet {
+  margin-top: 0.6rem;
+  margin-left: 1.2rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid rgba(210, 5, 5, 0.3);
+}
+
+.details-formation li,
+.details-experience li,
+.details-projet li {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-bottom: 0.4rem;
+  padding-left: 0.8rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.details-formation li::before,
+.details-experience li::before,
+.details-projet li::before {
+  content: '▸';
+  color: #EDB8BD;
+  font-size: 0.9rem;
+}
+
+/* ========== CONTEXTES ET RÉSULTATS (EXPÉRIENCE PRO) ========== */
+
+.contexte-stage,
+.resultats-stage {
+  display: block;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.contexte-stage {
+  background-color: rgba(210, 5, 5, 0.08);
+  border-left: 3px solid #D20505;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.resultats-stage {
+  background-color: rgba(45, 122, 62, 0.12);
+  border-left: 3px solid #2d7a3e;
+  color: #d4f0d9;
+  font-weight: 600;
+}
+
+.contexte-stage strong,
+.resultats-stage strong {
+  color: #cabbbb;
+  font-weight: 700;
+}
+
+/* ========== DURÉE STAGE ========== */
+
+.duree-stage {
+  font-style: italic;
+  color: #EDB8BD;
+  font-weight: 500;
+}
+
+/* ========== STACK PROJET ========== */
+
+.stack-projet {
+  display: block;
+  margin-top: 0.4rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-style: italic;
+}
+
+.stack-projet strong {
+  color: #cabbbb;
+  font-weight: 600;
+}
+
+/* ========== LIEN PROJET ========== */
+
+.lien-projet {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.lien-projet strong {
+  color: #cabbbb;
+  font-weight: 600;
+}
+
+.lien-projet a {
+  color: #EDB8BD;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.lien-projet a:hover {
+  color: white;
+  border-bottom-color: #EDB8BD;
+}
+
+/* ========== TITRES H3 DANS CV ========== */
+
+.cv-corps h3 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #cabbbb;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #D20505;
+  position: relative;
+}
+
+.cv-corps h3::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #F50100;
+}
+
+.cv-corps h3:not(:first-child) {
+  margin-top: 2rem;
+}
+
+/* ========== HEADER DANS EXPÉRIENCE PRO ========== */
+
+.cv-corps .cv-colonne.droite header {
+  margin-bottom: 0.6rem;
+}
+
+/* ========== RESPONSIVE - MEDIA QUERIES ADDITIONNELLES ========== */
+
+/* Tablettes (768px - 991px) */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .details-formation,
+  .details-experience,
+  .details-projet {
+    margin-left: 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .contexte-stage,
+  .resultats-stage {
+    padding: 0.6rem;
+    font-size: 0.88rem;
+  }
+  
+  .cv-corps h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Smartphones (481px - 767px) */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  .details-formation,
+  .details-experience,
+  .details-projet {
+    margin-left: 0.8rem;
+    font-size: 0.83rem;
+    margin-top: 0.5rem;
+  }
+  
+  .details-formation li,
+  .details-experience li,
+  .details-projet li {
+    font-size: 0.83rem;
+    line-height: 1.4;
+    margin-bottom: 0.35rem;
+  }
+  
+  .contexte-stage,
+  .resultats-stage {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cv-corps h3 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .cv-corps h3:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+  
+  .stack-projet,
+  .lien-projet {
+    font-size: 0.85rem;
+  }
+}
+
+/* Très petits écrans (≤ 480px) */
+@media screen and (max-width: 480px) {
+  .details-formation,
+  .details-experience,
+  .details-projet {
+    margin-left: 0.6rem;
+    margin-top: 0.4rem;
+    padding-left: 0.4rem;
+  }
+  
+  .details-formation li,
+  .details-experience li,
+  .details-projet li {
+    font-size: 0.8rem;
+    line-height: 1.35;
+    margin-bottom: 0.3rem;
+    padding-left: 0.6rem;
+  }
+  
+  .details-formation li::before,
+  .details-experience li::before,
+  .details-projet li::before {
+    font-size: 0.75rem;
+  }
+  
+  .contexte-stage,
+  .resultats-stage {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    border-left-width: 2px;
+  }
+  
+  .cv-corps h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .cv-corps h3::after {
+    width: 30px;
+  }
+  
+  .cv-corps h3:not(:first-child) {
+    margin-top: 1.2rem;
+  }
+  
+  .duree-stage {
+    font-size: 0.8rem;
+  }
+  
+  .stack-projet,
+  .lien-projet {
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+  }
+}
+
+/* ========== FIN STYLES ADDITIONNELS ========== */
